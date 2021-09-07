@@ -1,0 +1,228 @@
+[uuid(7830ca73-fb1f-4f6a-9ef2-cf9eb62b541e), helpfile("tspan.chm"), helpcontext(22), helpstring("CP-ITS ControlPanel")]
+library tspan{
+typedef [public] int CAObjHandle;
+	[dllname("tspan.dll")]
+	module DLLConstants {
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("Setup")]
+	module Setup{
+		[helpcontext(1), entry("tspan_Setup"), helpstring("Setup")]
+		void stdcall tspan_Setup(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR benchName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("General Functions")]
+	module GeneralFunctions{
+		[helpcontext(2), entry("tspan_DisplayDebugPanel"), helpstring("Display Debug Panel")]
+		void stdcall tspan_DisplayDebugPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(3), entry("tspan_DisplayOperatorPanel"), helpstring("Display Operator Panel")]
+		void stdcall tspan_DisplayOperatorPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(4), entry("tspan_DisplayResult"), helpstring("Display Result")]
+		void stdcall tspan_DisplayResult(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in] int result, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(5), entry("tspan_SetActualStepName"), helpstring("Set Actual Step Name")]
+		void stdcall tspan_SetActualStepName(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR actualStepName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(6), entry("tspan_InsertTextIntoTestReport"), helpstring("Insert Text Into Test Report")]
+		void stdcall tspan_InsertTextIntoTestReport(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(7), entry("tspan_HideActualPanel"), helpstring("Hide Actual Panel")]
+		void stdcall tspan_HideActualPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("Tests")]
+	module Tests{
+		[helpcontext(8), entry("tspan_DisplayNumericValue"), helpstring("Display Numeric Limit Test")]
+		void stdcall tspan_DisplayNumericValue(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR unit, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR compType, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR format, 
+			[in] double value, 
+			[in] double lowerLimit, 
+			[in] double upperLimit, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(9), entry("tspan_DisplayPassFail"), helpstring("Display Pass/Fail Test")]
+		void stdcall tspan_DisplayPassFail(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in] int result, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(10), entry("tspan_DisplayString"), helpstring("Display String Value Test")]
+		void stdcall tspan_DisplayString(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR compType, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR stringToCompare, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR expectedString, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(11), entry("tspan_DisplayInCircuitTest"), helpstring("Display In-Circuit-Test Test")]
+		void stdcall tspan_DisplayInCircuitTest(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in] int ict_ID, 
+			[in] int ictProgram_ID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR format, 
+			[in] int onlyFailedTests, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(12), entry("tspan_DisplayEazyScanTest"), helpstring("Display E-Scan-Test")]
+		void stdcall tspan_DisplayEazyScanTest(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in] int eazyscan_ID, 
+			[in] int ESNProgram_ID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR format, 
+			[in] int onlyFailedTests, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("SingleStep")]
+	module SingleStep{
+		[helpcontext(13), entry("tspan_SingleStepNumericValue"), helpstring("Single Step Numeric")]
+		void stdcall tspan_SingleStepNumericValue(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR unit, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR compType, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR format, 
+			[in] double value, 
+			[in] double lowerLimit, 
+			[in] double upperLimit, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(14), entry("tspan_SingleStepPassFail"), helpstring("Single Step Pass/Fail")]
+		void stdcall tspan_SingleStepPassFail(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in] int result, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(15), entry("tspan_SingleStepString"), helpstring("Single Step String Value")]
+		void stdcall tspan_SingleStepString(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR commentOfStep, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR compType, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR stringToCompare, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR expectedString, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("Utilitiy functions")]
+	module Utilitiyfunctions{
+		[helpcontext(16), entry("tspan_WriteReport"), helpstring("Write Report File")]
+		void stdcall tspan_WriteReport(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cPathName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cFileName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(17), entry("tspan_RunTest"), helpstring("Run Test From Teststand")]
+		void stdcall tspan_RunTest(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] int *serialIsCorrect, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] int *variantIsCorrect, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(18), entry("tspan_SetSerialNumber"), helpstring("Set serial number")]
+		void stdcall tspan_SetSerialNumber(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cSerialNumber, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(19), entry("tspan_GetSerialNumber"), helpstring("Get serial number")]
+		void stdcall tspan_GetSerialNumber(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cSerialNumber, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(20), entry("tspan_GetAddionalSerialNumber"), helpstring("Get additional serial number")]
+		void stdcall tspan_GetAddionalSerialNumber(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cMessageText, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cSerialNumber, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("tspan.dll"), helpcontext(22), helpstring("Cleanup")]
+	module Cleanup{
+		[helpcontext(21), entry("tspan_Cleanup"), helpstring("Cleanup")]
+		void stdcall tspan_Cleanup(
+			[in] CAObjHandle sequenceContext, 
+			[in] long resourceID, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+};

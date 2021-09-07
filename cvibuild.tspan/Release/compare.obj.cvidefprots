@@ -1,0 +1,64 @@
+[iCompareEQ]
+Class="Function"
+Prototype="int iCompareEQ(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareNEQ]
+Class="Function"
+Prototype="int iCompareNEQ(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGT]
+Class="Function"
+Prototype="int iCompareGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLT]
+Class="Function"
+Prototype="int iCompareLT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGE]
+Class="Function"
+Prototype="int iCompareGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLE]
+Class="Function"
+Prototype="int iCompareLE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGTLT]
+Class="Function"
+Prototype="int iCompareGTLT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGELE]
+Class="Function"
+Prototype="int iCompareGELE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGELT]
+Class="Function"
+Prototype="int iCompareGELT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareGTLE]
+Class="Function"
+Prototype="int iCompareGTLE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLTGT]
+Class="Function"
+Prototype="int iCompareLTGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLEGE]
+Class="Function"
+Prototype="int iCompareLEGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLEGT]
+Class="Function"
+Prototype="int iCompareLEGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareLTGE]
+Class="Function"
+Prototype="int iCompareLTGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[iCompareNOCOMP]
+Class="Function"
+Prototype="int iCompareNOCOMP(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+
+[FormatValues]
+Class="Function"
+Prototype="void FormatValues(char cValue[1024], char *cFormat, double dValue);"
+

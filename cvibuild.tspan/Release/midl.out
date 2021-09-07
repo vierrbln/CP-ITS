@@ -1,0 +1,15 @@
+Microsoft (R) 32b/64b MIDL Compiler Version 8.00.0603 
+Copyright (c) Microsoft Corporation. All rights reserved.
+Processing x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\typelib.odl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\oaidl.idl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\objidl.idl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\unknwn.idl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\wtypes.idl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\wtypesbase.idl
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\basetsd.h
+C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\basetsd.h:63:9: warning: #pragma once in main file [-Wignored-pragmas]
+#pragma once
+        ^
+1 warning generated.
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\guiddef.h
+Processing C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\oaidl.acf

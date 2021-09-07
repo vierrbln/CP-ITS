@@ -1,0 +1,92 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+
+[tspan_Setup]
+Class="Function"
+Prototype="void tspan_Setup(CAObjHandle sequenceContext, char *pBenchName, long *pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayDebugPanel]
+Class="Function"
+Prototype="void tspan_DisplayDebugPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayOperatorPanel]
+Class="Function"
+Prototype="void tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayResult]
+Class="Function"
+Prototype="void tspan_DisplayResult(CAObjHandle sequenceContext, long pResourceId, int iResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_SetActualStepName]
+Class="Function"
+Prototype="void tspan_SetActualStepName(CAObjHandle sequenceContext, long pResourceId, char *actualStepName, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_InsertTextIntoTestReport]
+Class="Function"
+Prototype="void tspan_InsertTextIntoTestReport(CAObjHandle sequenceContext, long pResourceId, char *cText, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_HideActualPanel]
+Class="Function"
+Prototype="void tspan_HideActualPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayNumericValue]
+Class="Function"
+Prototype="void tspan_DisplayNumericValue(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cUnit, char *cCompType, char *cFormat, double dValue, double dLowerLimit, double dUpperLimit, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayPassFail]
+Class="Function"
+Prototype="void tspan_DisplayPassFail(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int lResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayString]
+Class="Function"
+Prototype="void tspan_DisplayString(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cCompType, char *cStringToCompare, char *cExpectedString, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayInCircuitTest]
+Class="Function"
+Prototype="void tspan_DisplayInCircuitTest(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int ict_ID, int ictProgram_ID, char *cFormat, int iOnlyFailedTests, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_DisplayEazyScanTest]
+Class="Function"
+Prototype="void tspan_DisplayEazyScanTest(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int eazyscan_ID, int esnProgram_ID, char *cFormat, int iOnlyFailedTests, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_SingleStepNumericValue]
+Class="Function"
+Prototype="void tspan_SingleStepNumericValue(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cUnit, char *cCompType, char *cFormat, double dValue, double dLowerLimit, double dUpperLimit, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_SingleStepPassFail]
+Class="Function"
+Prototype="void tspan_SingleStepPassFail(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int lResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_SingleStepString]
+Class="Function"
+Prototype="void tspan_SingleStepString(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cCompType, char *cStringToCompare, char *cExpectedString, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_WriteReport]
+Class="Function"
+Prototype="void tspan_WriteReport(CAObjHandle sequenceContext, long pResourceId, char *cPathNameOrg, char *cFileName, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_RunTest]
+Class="Function"
+Prototype="void tspan_RunTest(CAObjHandle sequenceContext, long pResourceId, long *iSerialIsCorrect, long *iVariantIsCorrect, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+
+[tspan_SetSerialNumber]
+Class="Function"
+Prototype="void tspan_SetSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+
+[tspan_GetSerialNumber]
+Class="Function"
+Prototype="void tspan_GetSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+
+[tspan_GetAddionalSerialNumber]
+Class="Function"
+Prototype="void tspan_GetAddionalSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cMessageText, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+
+[tspan_Cleanup]
+Class="Function"
+Prototype="void tspan_Cleanup(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+

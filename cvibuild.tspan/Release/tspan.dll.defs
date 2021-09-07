@@ -1,0 +1,24 @@
+LIBRARY tspan
+
+EXPORTS
+tspan_Cleanup
+tspan_GetAddionalSerialNumber
+tspan_GetSerialNumber
+tspan_SetSerialNumber
+tspan_RunTest
+tspan_WriteReport
+tspan_SingleStepString
+tspan_SingleStepPassFail
+tspan_SingleStepNumericValue
+tspan_DisplayEazyScanTest
+tspan_DisplayInCircuitTest
+tspan_DisplayString
+tspan_DisplayPassFail
+tspan_DisplayNumericValue
+tspan_HideActualPanel
+tspan_InsertTextIntoTestReport
+tspan_SetActualStepName
+tspan_DisplayResult
+tspan_DisplayOperatorPanel
+tspan_DisplayDebugPanel
+tspan_Setup

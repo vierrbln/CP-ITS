@@ -1,0 +1,76 @@
+[StartThreadForDebugPanel]
+Class="Function"
+Prototype="int StartThreadForDebugPanel(void *data);"
+
+[StartThreadForOperatorPanel]
+Class="Function"
+Prototype="int StartThreadForOperatorPanel(void *data);"
+
+[formatError]
+Class="Function"
+Prototype="void formatError(char *buffer, int code, long resId, char *benchDevice);"
+
+[ResetMeasurements]
+Class="Function"
+Prototype="void ResetMeasurements();"
+
+[iPlotBarForAnalog]
+Class="Function"
+Prototype="int iPlotBarForAnalog(int iTabHandle, double dValue, int iColor);"
+
+[SetDebugUirPafa]
+Class="Function"
+Prototype="void SetDebugUirPafa(int iPanelHandle);"
+
+[SetDebugUirNum]
+Class="Function"
+Prototype="void SetDebugUirNum(int iPanelHandle);"
+
+[SetDebugUirString]
+Class="Function"
+Prototype="void SetDebugUirString(int iPanelHandle);"
+
+[InsertVariants]
+Class="Function"
+Prototype="void InsertVariants(BENCH_STRUCT *pPointer, int PanelHandle, void *data);"
+
+[InsertVariantsDebug]
+Class="Function"
+Prototype="void InsertVariantsDebug(BENCH_STRUCT *pPointer, int PanelHandle, void *data);"
+
+[QuitThread]
+Class="Function"
+Prototype="void QuitThread(void *callbackData);"
+
+[iReadFixtureStrokeFile]
+Class="Function"
+Prototype="int iReadFixtureStrokeFile(char *cFileName, int iFixtureCode, int *iActualCounts, int *iYellowLimit, int *iRedLimit);"
+
+[iWriteFixtureStrokeFile]
+Class="Function"
+Prototype="int iWriteFixtureStrokeFile(char *cFileName, int iFixtureCode, int iActualCounts);"
+
+[vOrderGUIElementsAfterResize]
+Class="Function"
+Prototype="void vOrderGUIElementsAfterResize(int panel);"
+
+[pAppendTestStep]
+Class="Function"
+Prototype="struct teststep *pAppendTestStep(struct teststep *pFirstTestStep, char cTestCaseType, char *cStepName, char *cComment, char *cLogMessage, double dMeasurement, double dLowerLimit, double dUpperLimit, char *cUnit, char *cCompType, char *cFormat, int iResult, char *cStringToCompare, char *cExpectedString);"
+
+[vFreeAllTestResults]
+Class="Function"
+Prototype="void vFreeAllTestResults(struct teststep *pFirst);"
+
+[vChangePointToComma]
+Class="Function"
+Prototype="void vChangePointToComma(char *cValue, int iLength);"
+
+[cOwnDateStr]
+Class="Function"
+Prototype="char *cOwnDateStr();"
+
+[iKillTabInStepName]
+Class="Function"
+Prototype="int iKillTabInStepName(char *cInputString, char *cOutputString, int iLength);"
+

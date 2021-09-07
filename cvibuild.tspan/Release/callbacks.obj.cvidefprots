@@ -1,0 +1,148 @@
+[RunButtonHit]
+Class="Function"
+Prototype="int RunButtonHit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ClearData]
+Class="Function"
+Prototype="int ClearData(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerForVariant]
+Class="Function"
+Prototype="int TimerForVariant(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerForStrokeIndicator]
+Class="Function"
+Prototype="int TimerForStrokeIndicator(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RunTest]
+Class="Function"
+Prototype="int RunTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit]
+Class="Function"
+Prototype="void Quit(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[RunModeNormal]
+Class="Function"
+Prototype="void RunModeNormal(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[RunModeSingleStep]
+Class="Function"
+Prototype="void RunModeSingleStep(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[RunModeStopFail]
+Class="Function"
+Prototype="void RunModeStopFail(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[EnableReport]
+Class="Function"
+Prototype="void EnableReport(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[AppendReport]
+Class="Function"
+Prototype="void AppendReport(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[OnlyFailedTests]
+Class="Function"
+Prototype="void OnlyFailedTests(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[UIActualTestStep]
+Class="Function"
+Prototype="void UIActualTestStep(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[UIOnlyFailedTests]
+Class="Function"
+Prototype="void UIOnlyFailedTests(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[EnableTicketPrinter]
+Class="Function"
+Prototype="void EnableTicketPrinter(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ChangeVariant]
+Class="Function"
+Prototype="void ChangeVariant(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ChangeVariantDebug]
+Class="Function"
+Prototype="void ChangeVariantDebug(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[Tab]
+Class="Function"
+Prototype="int Tab(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AlwaysOnTop]
+Class="Function"
+Prototype="void AlwaysOnTop(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ShowCpkValues]
+Class="Function"
+Prototype="void ShowCpkValues(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ChangeHistogramInterval]
+Class="Function"
+Prototype="void ChangeHistogramInterval(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ClearDataMenu]
+Class="Function"
+Prototype="void ClearDataMenu(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[Measurement]
+Class="Function"
+Prototype="int Measurement(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResetStatistics]
+Class="Function"
+Prototype="void ResetStatistics(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[OpSingleCallback]
+Class="Function"
+Prototype="int OpSingleCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[About]
+Class="Function"
+Prototype="void About(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ChangeVariantRing]
+Class="Function"
+Prototype="int ChangeVariantRing(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TabCallBack]
+Class="Function"
+Prototype="int TabCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ValueTableCallBack]
+Class="Function"
+Prototype="int ValueTableCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CloseGraphWindow]
+Class="Function"
+Prototype="int CloseGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[MeasCurvePanelCallback]
+Class="Function"
+Prototype="int MeasCurvePanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RunModeMSAType1]
+Class="Function"
+Prototype="void RunModeMSAType1(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[MSAIndicatorCallBack]
+Class="Function"
+Prototype="int MSAIndicatorCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ChangeHistogramBars]
+Class="Function"
+Prototype="int ChangeHistogramBars(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PrintGraphWindow]
+Class="Function"
+Prototype="int PrintGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerForRunButtonIfMSAEnabled]
+Class="Function"
+Prototype="int TimerForRunButtonIfMSAEnabled(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[GeneralTimerCallback]
+Class="Function"
+Prototype="int GeneralTimerCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

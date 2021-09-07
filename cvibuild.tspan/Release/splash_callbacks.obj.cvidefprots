@@ -1,0 +1,8 @@
+[PictureCallBack]
+Class="Function"
+Prototype="int PictureCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SlpashCallBack]
+Class="Function"
+Prototype="int SlpashCallBack(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

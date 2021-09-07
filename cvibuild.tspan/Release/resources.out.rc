@@ -1,0 +1,242 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,5
+ PRODUCTVERSION 2,5,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "CP-ITS ControlPanel\0"
+            VALUE "FileVersion", "2.4.0.5\0"
+            VALUE "InternalName", "S101\0"
+            VALUE "LegalCopyright", "Copyright © Robert Renner, 2009-2021\0"
+            VALUE "LegalTrademarks", "Free software under terms of  GNU General Public License.\0"
+            VALUE "OriginalFilename", "tspan.dll\0"
+            VALUE "ProductName", "SW-ITS\0"
+            VALUE "ProductVersion", "2.5.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+1 typelib "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\typelib.odl.tlb"
+Splash.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CommonResources\\Splash.uir"
+testcontrolpanel:single.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\testcontrolpanel_single.uir"
+testdebugpanel.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\testdebugpanel.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "void About(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void AlwaysOnTop(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void AppendReport(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int ChangeHistogramBars(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void ChangeHistogramInterval(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void ChangeVariant(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void ChangeVariantDebug(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int ChangeVariantRing(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int ClearData(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void ClearDataMenu(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int CloseGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "void EnableReport(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void EnableTicketPrinter(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void FormatValues(char cValue[1024], char *cFormat, double dValue);"
+   "\n",
+   "int GeneralTimerCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void InsertVariants(BENCH_STRUCT *pPointer, int PanelHandle, void *data);"
+   "\n",
+   "void InsertVariantsDebug(BENCH_STRUCT *pPointer, int PanelHandle, void *data);"
+   "\n",
+   "int MSAIndicatorCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int MeasCurvePanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int Measurement(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void OnlyFailedTests(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int OpSingleCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int PictureCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int PrintGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void Quit(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void QuitThread(void *callbackData);"
+   "\n",
+   "void ResetMeasurements();"
+   "\n",
+   "void ResetStatistics(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int RunButtonHit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void RunModeMSAType1(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void RunModeNormal(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void RunModeSingleStep(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void RunModeStopFail(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int RunTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void SetDebugUirNum(int iPanelHandle);"
+   "\n",
+   "void SetDebugUirPafa(int iPanelHandle);"
+   "\n",
+   "void SetDebugUirString(int iPanelHandle);"
+   "\n",
+   "void ShowCpkValues(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int SlpashCallBack(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int StartThreadForDebugPanel(void *data);"
+   "\n",
+   "int StartThreadForOperatorPanel(void *data);"
+   "\n",
+   "int Tab(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TabCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TimerForRunButtonIfMSAEnabled(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TimerForStrokeIndicator(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TimerForVariant(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void UIActualTestStep(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void UIOnlyFailedTests(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "int ValueTableCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "char *cOwnDateStr();"
+   "\n",
+   "void formatError(char *buffer, int code, long resId, char *benchDevice);"
+   "\n",
+   "int iCompareEQ(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGELE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGELT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGTLE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareGTLT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLEGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLEGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLTGE(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareLTGT(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareNEQ(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iCompareNOCOMP(int iTabHandle, int iMode, int iSerialIsMandatory, double dValue, double dLowerLimit, double dUpperLimit, char cNameOfStep[1024], char cUnit[1024], char cFormat[1024]);"
+   "\n",
+   "int iKillTabInStepName(char *cInputString, char *cOutputString, int iLength);"
+   "\n",
+   "int iPlotBarForAnalog(int iTabHandle, double dValue, int iColor);"
+   "\n",
+   "int iReadFixtureStrokeFile(char *cFileName, int iFixtureCode, int *iActualCounts, int *iYellowLimit, int *iRedLimit);"
+   "\n",
+   "int iWriteFixtureStrokeFile(char *cFileName, int iFixtureCode, int iActualCounts);"
+   "\n",
+   "struct teststep *pAppendTestStep(struct teststep *pFirstTestStep, char cTestCaseType, char *cStepName, char *cComment, char *cLogMessage, double dMeasurement, double dLowerLimit, double dUpperLimit, char *cUnit, char *cCompType, char *cFormat, int iResult, char *cStringToCompare, char *cExpectedString);"
+   "\n",
+   "void tspan_Cleanup(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayDebugPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayEazyScanTest(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int eazyscan_ID, int esnProgram_ID, char *cFormat, int iOnlyFailedTests, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayInCircuitTest(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int ict_ID, int ictProgram_ID, char *cFormat, int iOnlyFailedTests, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayNumericValue(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cUnit, char *cCompType, char *cFormat, double dValue, double dLowerLimit, double dUpperLimit, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayPassFail(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int lResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayResult(CAObjHandle sequenceContext, long pResourceId, int iResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_DisplayString(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cCompType, char *cStringToCompare, char *cExpectedString, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_GetAddionalSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cMessageText, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+   "\n",
+   "void tspan_GetSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+   "\n",
+   "void tspan_HideActualPanel(CAObjHandle sequenceContext, long pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_InsertTextIntoTestReport(CAObjHandle sequenceContext, long pResourceId, char *cText, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_RunTest(CAObjHandle sequenceContext, long pResourceId, long *iSerialIsCorrect, long *iVariantIsCorrect, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_SetActualStepName(CAObjHandle sequenceContext, long pResourceId, char *actualStepName, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_SetSerialNumber(CAObjHandle sequenceContext, long pResourceId, char *cSerialNumber, short *pErrorOccurred, long *pErrorCode, char *cErrorMessage);"
+   "\n",
+   "void tspan_Setup(CAObjHandle sequenceContext, char *pBenchName, long *pResourceId, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_SingleStepNumericValue(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cUnit, char *cCompType, char *cFormat, double dValue, double dLowerLimit, double dUpperLimit, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_SingleStepPassFail(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, int lResult, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_SingleStepString(CAObjHandle sequenceContext, long pResourceId, char *cNameOfStep, char *cCommentOfStep, char *cCompType, char *cStringToCompare, char *cExpectedString, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tspan_WriteReport(CAObjHandle sequenceContext, long pResourceId, char *cPathNameOrg, char *cFileName, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void vChangePointToComma(char *cValue, int iLength);"
+   "\n",
+   "void vFreeAllTestResults(struct teststep *pFirst);"
+   "\n",
+   "void vOrderGUIElementsAfterResize(int panel);"
+   "\n",
+   "\0"
+}

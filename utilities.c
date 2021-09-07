@@ -1074,13 +1074,15 @@ char *cOwnDateStr (void)
 /**
 KillTabInStepName
 *
-@brief Find tabs in given string and replace it with space char
+@brief Find tabs in given string and replace it with space char. Special function
+to format the name of steps. Was ness tabs was used in name of steps in teststand to
+format special step names.
 *
 @param cInputString: String (NameOfStep) that can contains tabs (Input)
 @param cOutputString: After correct execution that string is equal to input without tabs
 @param iLength: Length of given string (Input)
 *
-@return Date string in format 23.10.2010
+@return Found tabs
 *****************************************************************************/
 int iKillTabInStepName (char *cInputString, char *cOutputString, int iLength)
 {

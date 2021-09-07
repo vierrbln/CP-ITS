@@ -1,0 +1,43 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,5
+ PRODUCTVERSION 2,5,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "CP-ITS ControlPanel\0"
+            VALUE "FileVersion", "2.4.0.5\0"
+            VALUE "InternalName", "S101\0"
+            VALUE "LegalCopyright", "Copyright © Robert Renner, 2009-2021\0"
+            VALUE "LegalTrademarks", "Free software under terms of  GNU General Public License.\0"
+            VALUE "OriginalFilename", "tspan.dll\0"
+            VALUE "ProductName", "SW-ITS\0"
+            VALUE "ProductVersion", "2.5.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+1 typelib "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\typelib.odl.tlb"
+Splash.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CommonResources\\Splash.uir"
+testcontrolpanel:single.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\testcontrolpanel_single.uir"
+testdebugpanel.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\testdebugpanel.uir"

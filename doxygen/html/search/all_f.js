@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['saving_5fpop_0',['SAVING_POP',['../de/dd4/testcontrolpanel__single_8h.html#a454e052607a1897b522496423d5b6f98',1,'testcontrolpanel_single.h']]],
+  ['saving_5fpop_5fmsg_1',['SAVING_POP_MSG',['../de/dd4/testcontrolpanel__single_8h.html#abd03e4013f22c0014d7e8467830fb554',1,'testcontrolpanel_single.h']]],
+  ['saving_5fpop_5fsaving_2',['SAVING_POP_SAVING',['../de/dd4/testcontrolpanel__single_8h.html#a2ad4bded98a4962887ee988beb78441a',1,'testcontrolpanel_single.h']]],
+  ['serialismandatory_3',['SerialIsMandatory',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#a50db44ab02600aca7377442c1b14fe1f',1,'BENCH_STRUCT']]],
+  ['seriallength_4',['SerialLength',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#a515339088d0b0207accb699a649aa476',1,'BENCH_STRUCT']]],
+  ['setdebuguirnum_5',['SetDebugUirNum',['../d6/dc2/definitions_8h.html#a2d7c92b87d2037a07a41df50ba5b0753',1,'SetDebugUirNum(int iPanelHandle):&#160;utilities.c'],['../d7/db6/utilities_8c.html#a2d7c92b87d2037a07a41df50ba5b0753',1,'SetDebugUirNum(int iPanelHandle):&#160;utilities.c']]],
+  ['setdebuguirpafa_6',['SetDebugUirPafa',['../d6/dc2/definitions_8h.html#a86e0210a70d02e84316a946d74e9b3f0',1,'SetDebugUirPafa(int iPanelHandle):&#160;utilities.c'],['../d7/db6/utilities_8c.html#a86e0210a70d02e84316a946d74e9b3f0',1,'SetDebugUirPafa(int iPanelHandle):&#160;utilities.c']]],
+  ['setdebuguirstring_7',['SetDebugUirString',['../d6/dc2/definitions_8h.html#a17c805c2d243bd24d2dbf19161261434',1,'SetDebugUirString(int iPanelHandle):&#160;utilities.c'],['../d7/db6/utilities_8c.html#a17c805c2d243bd24d2dbf19161261434',1,'SetDebugUirString(int iPanelHandle):&#160;utilities.c']]],
+  ['setindex_8',['SETINDEX',['../d6/dc2/definitions_8h.html#a1ca16a17afd84629f35e11df0e500488',1,'definitions.h']]],
+  ['showcpkvalues_9',['ShowCpkValues',['../d3/d3a/callbacks_8c.html#a0595fa9fd57d473a5b455785b422fa66',1,'ShowCpkValues(int menuBar, int menuItem, void *callbackData, int panel):&#160;callbacks.c'],['../d8/d91/testdebugpanel_8h.html#a5f0316051502d961a215a99f4907bbe8',1,'ShowCpkValues(int menubar, int menuItem, void *callbackData, int panel):&#160;callbacks.c']]],
+  ['showcpkvalues_5fenabled_10',['ShowCPKValues_Enabled',['../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129',1,'definitions.h']]],
+  ['singlestep_11',['SINGLESTEP',['../d8/d91/testdebugpanel_8h.html#a284f08336f629a67d9b9d8c77c85a70f',1,'testdebugpanel.h']]],
+  ['singlestep_5fcontinue_12',['SINGLESTEP_CONTINUE',['../d8/d91/testdebugpanel_8h.html#a3493c9006b1ad5ad4e21d57574d83d81',1,'testdebugpanel.h']]],
+  ['singlestep_5frepeat_13',['SINGLESTEP_REPEAT',['../d8/d91/testdebugpanel_8h.html#abbb077a8e23ad37cced888aa382330e8',1,'testdebugpanel.h']]],
+  ['singlestep_5fterminate_14',['SINGLESTEP_TERMINATE',['../d8/d91/testdebugpanel_8h.html#aded4add4617e115d7216ce6033bb59b2',1,'testdebugpanel.h']]],
+  ['singlestep_5ftextmsg_15',['SINGLESTEP_TEXTMSG',['../d8/d91/testdebugpanel_8h.html#a2bd18ef3b3f9f77492c05b7514e4da6a',1,'testdebugpanel.h']]],
+  ['startthreadforadjustmentpanel_16',['StartThreadForAdjustmentPanel',['../d6/dc2/definitions_8h.html#a0cb2ed4479826562bf55e387d67e725d',1,'definitions.h']]],
+  ['startthreadfordebugpanel_17',['StartThreadForDebugPanel',['../d6/dc2/definitions_8h.html#a0d6fe454bbc9f4da0628cf1fe94829c6',1,'StartThreadForDebugPanel(void *data):&#160;utilities.c'],['../d7/db6/utilities_8c.html#a0d6fe454bbc9f4da0628cf1fe94829c6',1,'StartThreadForDebugPanel(void *data):&#160;utilities.c']]],
+  ['startthreadforoperatorpanel_18',['StartThreadForOperatorPanel',['../d6/dc2/definitions_8h.html#aeb792d26f98c808f77c2843bc783c6e2',1,'StartThreadForOperatorPanel(void *data):&#160;utilities.c'],['../d7/db6/utilities_8c.html#aeb792d26f98c808f77c2843bc783c6e2',1,'StartThreadForOperatorPanel(void *data):&#160;utilities.c']]],
+  ['strokeactualcounts_19',['StrokeActualCounts',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#a0c1eb219445ef119d65f2bdc98e2f361',1,'BENCH_STRUCT']]],
+  ['strokecounterenabled_20',['StrokeCounterEnabled',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#ad487b501b2afce19e279b3eaf0c5793c',1,'BENCH_STRUCT']]],
+  ['strokecounterfile_21',['StrokeCounterFile',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#aafd483df58319b2406c0651f6af2c673',1,'BENCH_STRUCT']]],
+  ['strokecounterredlimit_22',['StrokeCounterRedLimit',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#a957fa94f309d11dfb114f8a7fd03db28',1,'BENCH_STRUCT']]],
+  ['strokecounteryellowlimit_23',['StrokeCounterYellowLimit',['../df/de7/struct_b_e_n_c_h___s_t_r_u_c_t.html#a4ce40045b50cd39f479c1cd9913aa6f8',1,'BENCH_STRUCT']]]
+];

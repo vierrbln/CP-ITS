@@ -1,0 +1,61 @@
+-nologo
+-out:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.dll
+-def:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.dll.defs
+-implib:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.lib
+-ignoreexports
+-infpll:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\link_list.txt
+-dependenciesMapFile:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\dependencies.lnk.in
+-arch:x86
+-timestamp
+-loadextmod
+-res:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\resources.res
+-entry:_CVIDllMainStartupCode@12
+-base:0x400000
+-linked:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\linkersummary.txt
+-dlldeps:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\dlldependencies.txt
+-licensing:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\linkerlicensing.txt
+-browsedeps:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\callbacks.obj
+-in:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\compare.obj
+-in:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\splash_callbacks.obj
+-in:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.obj
+-in:x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\utilities.obj
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2017\bin\msvc\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\custctrl\custsupp\msvc\ckeztab.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvitdms.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\custctrl\msvc\easytab.obj
+-more:c:\Program Files (x86)\Sw-ITS\Bin\eazyscan.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\Rohde-Schwarz\GTSL\Bin\hrestim.lib
+-more:c:\Program Files (x86)\Rohde-Schwarz\GTSL\Bin\ICT.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\inifile.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\nivxi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\Ole32.Lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\Rohde-Schwarz\GTSL\Bin\resmgr.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\toolbox.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\instr\TestStand\API\msvc\tsapicvi.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\instr\TestStand\API\msvc\tsui.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\instr\TestStand\API\msvc\tsuisupp.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\instr\TestStand\API\msvc\tsutil.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

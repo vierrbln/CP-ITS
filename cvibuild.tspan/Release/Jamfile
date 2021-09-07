@@ -1,0 +1,56 @@
+HDRS = 	"i:\\Privat\\5_softwerk4R\\Projekte\\Programme\\Rohde&Schwarz\\GTSL\\Include"
+	"i:\\Privat\\5_softwerk4R\\Projekte\\Program Files\\Rohde&Schwarz\\GTSL\\Include"
+	"c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2017 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2017\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Bin"
+	"x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "callbacks.c" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "compare.c" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "definitions.h" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "eazyscan.h" = "c:\\Program Files (x86)\\Sw-ITS\\Include" ;
+LOCATE on "hrestim.h" = "c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include" ;
+LOCATE on "ict.h" = "c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include" ;
+LOCATE on "Splash.h" = "x:\\OneDrive\\softwerk4R\\Repos\\CommonResources" ;
+LOCATE on "splash_callbacks.c" = "x:\\OneDrive\\softwerk4R\\Repos\\CommonResources" ;
+LOCATE on "testcontrolpanel_single.h" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "testdebugpanel.h" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "tspan.c" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "tspan.h" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+LOCATE on "utilities.c" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj" : "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\tspan.c" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj" = 1 ;
+DEFPROTS on "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj.cvidefprots" ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj" = "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj.out" ;
+PrjObjects += "x:\\OneDrive\\softwerk4R\\Repos\\CP-ITS\\cvibuild.tspan\\Release\\tspan.obj" ;
+Depends all : $(PrjObjects) ;

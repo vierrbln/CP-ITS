@@ -1,0 +1,17 @@
+-inrc x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\resources.in.rc
+-outrc x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\resources.out.rc
+-inmacro x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.h.hmacros
+-inhdef x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.h.hdefs
+-indeclinfo x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.h.declinfo
+-outdef x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.dll.defs
+-indeclinfo x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.c.declinfo
+-indefprot x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\callbacks.obj.cvidefprots
+-indefprot x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\compare.obj.cvidefprots
+-indefprot x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\splash_callbacks.obj.cvidefprots
+-indefprot x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\tspan.obj.cvidefprots
+-indefprot x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\utilities.obj.cvidefprots
+-inodl x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\template.odl
+-outodl x:\OneDrive\softwerk4R\Repos\CP-ITS\cvibuild.tspan\Release\typelib.odl
+-cc cdecl
+-libraryName tspan
+-dllName tspan.dll
