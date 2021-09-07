@@ -1,0 +1,75 @@
+[ALIAS]
+IDH_tspan_Setup=tspan_files\Functtspan_Setup.html
+IDH_tspan_DisplayDebugPanel=tspan_files\Functtspan_DisplayDebugPanel.html
+IDH_tspan_DisplayOperatorPanel=tspan_files\Functtspan_DisplayOperatorPanel.html
+IDH_tspan_DisplayResult=tspan_files\Functtspan_DisplayResult.html
+IDH_tspan_SetActualStepName=tspan_files\Functtspan_SetActualStepName.html
+IDH_tspan_InsertTextIntoTestReport=tspan_files\Functtspan_InsertTextIntoTestReport.html
+IDH_tspan_HideActualPanel=tspan_files\Functtspan_HideActualPanel.html
+IDH_tspan_DisplayNumericValue=tspan_files\Functtspan_DisplayNumericValue.html
+IDH_tspan_DisplayPassFail=tspan_files\Functtspan_DisplayPassFail.html
+IDH_tspan_DisplayString=tspan_files\Functtspan_DisplayString.html
+IDH_tspan_DisplayInCircuitTest=tspan_files\Functtspan_DisplayInCircuitTest.html
+IDH_tspan_SingleStepNumericValue=tspan_files\Functtspan_SingleStepNumericValue.html
+IDH_tspan_SingleStepPassFail=tspan_files\Functtspan_SingleStepPassFail.html
+IDH_tspan_SingleStepString=tspan_files\Functtspan_SingleStepString.html
+IDH_tspan_WriteReport=tspan_files\Functtspan_WriteReport.html
+IDH_tspan_RunTest=tspan_files\Functtspan_RunTest.html
+IDH_tspan_SetSerialNumber=tspan_files\Functtspan_SetSerialNumber.html
+IDH_tspan_GetSerialNumber=tspan_files\Functtspan_GetSerialNumber.html
+IDH_tspan_GetAddionalSerialNumber=tspan_files\Functtspan_GetAddionalSerialNumber.html
+IDH_tspan_Cleanup=tspan_files\Functtspan_Cleanup.html
+IDH_tspan_html_main_file=tspan.html
+
+[MAP]
+#define IDH_tspan_Setup 1
+#define IDH_tspan_DisplayDebugPanel 2
+#define IDH_tspan_DisplayOperatorPanel 3
+#define IDH_tspan_DisplayResult 4
+#define IDH_tspan_SetActualStepName 5
+#define IDH_tspan_InsertTextIntoTestReport 6
+#define IDH_tspan_HideActualPanel 7
+#define IDH_tspan_DisplayNumericValue 8
+#define IDH_tspan_DisplayPassFail 9
+#define IDH_tspan_DisplayString 10
+#define IDH_tspan_DisplayInCircuitTest 11
+#define IDH_tspan_SingleStepNumericValue 12
+#define IDH_tspan_SingleStepPassFail 13
+#define IDH_tspan_SingleStepString 14
+#define IDH_tspan_WriteReport 15
+#define IDH_tspan_RunTest 16
+#define IDH_tspan_SetSerialNumber 17
+#define IDH_tspan_GetSerialNumber 18
+#define IDH_tspan_GetAddionalSerialNumber 19
+#define IDH_tspan_Cleanup 20
+#define IDH_tspan_html_main_file 21
+
+[FILES]
+tspan.html
+tspan_files\Alphabetical Function Index.html
+tspan_files\Hierarchical Function Index.html
+tspan_files\ClassGeneral Functions.html
+tspan_files\ClassTests.html
+tspan_files\ClassSingleStep.html
+tspan_files\ClassUtilitiy functions.html
+tspan_files\Functtspan_Setup.html
+tspan_files\Functtspan_DisplayDebugPanel.html
+tspan_files\Functtspan_DisplayOperatorPanel.html
+tspan_files\Functtspan_DisplayResult.html
+tspan_files\Functtspan_SetActualStepName.html
+tspan_files\Functtspan_InsertTextIntoTestReport.html
+tspan_files\Functtspan_HideActualPanel.html
+tspan_files\Functtspan_DisplayNumericValue.html
+tspan_files\Functtspan_DisplayPassFail.html
+tspan_files\Functtspan_DisplayString.html
+tspan_files\Functtspan_DisplayInCircuitTest.html
+tspan_files\Functtspan_SingleStepNumericValue.html
+tspan_files\Functtspan_SingleStepPassFail.html
+tspan_files\Functtspan_SingleStepString.html
+tspan_files\Functtspan_WriteReport.html
+tspan_files\Functtspan_RunTest.html
+tspan_files\Functtspan_SetSerialNumber.html
+tspan_files\Functtspan_GetSerialNumber.html
+tspan_files\Functtspan_GetAddionalSerialNumber.html
+tspan_files\Functtspan_Cleanup.html
+tspan_files\htmlhelp.css

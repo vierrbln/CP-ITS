@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Board xmlns="http://rsww.EGTSL.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rsww.EGTSL.com ICT.xsd">
+	<Header Name="Example1">
+		<Description>Generated from board description file: 'Y:\egtsl_src\Example\Example1.BDL'
+Report was written to: 'Y:\egtsl_src\Example\Example1_Report.txt'
+</Description>
+		<ChangeHistory>
+			<HistoryRecord>2005-12-27 15:00:08 - ATG 02.10 built on EGTSL 02.10</HistoryRecord>
+		</ChangeHistory>
+		<Variants>
+		</Variants>
+		<Breakpoints>
+		</Breakpoints>
+	</Header>
+	<GOPE ID="1" BreakAfterNFailure="1" Name="root" Comment="">
+		<GOPE Name="Discharge" ID="2" Comment="">
+			<Test Name="Discharge Test" ID="6" Comment="" TestMethod="Discharge">
+				<Connexions>
+					<CNX InstrLine="Reference">GND</CNX>
+					<CNX InstrLine="NodeList">VCC,TR1.E</CNX>
+				</Connexions>
+				<Measurement Name="NumPins">
+					<Limits LowerLimit="0" UpperLimit="0"/>
+					<Property Name="Nominal" Unit="none">0</Property>
+					<Property Name="TestTime" Unit="s">3</Property>
+				</Measurement>
+			</Test>
+		</GOPE>
+		<GOPE Name="Contact" ID="3" Comment="">
+			<Test Name="Contact Test" ID="7" Comment="" TestMethod="Contact">
+				<Connexions>
+					<CNX InstrLine="NodeAllNot"></CNX>
+				</Connexions>
+				<Measurement Name="NumPins">
+					<Limits LowerLimit="0" UpperLimit="0"/>
+					<Property Name="Nominal" Unit="none">0</Property>
+					<Property Name="ResLimit" Unit="MOhm">1</Property>
+					<Property Name="Voltage" Unit="V">2.5</Property>
+					<Property Name="Current" Unit="mA">0.5</Property>
+				</Measurement>
+			</Test>
+		</GOPE>
+		<GOPE Name="Short" ID="4" Comment="">
+			<Test Name="Short Test" ID="16" Comment="" TestMethod="Short">
+				<Connexions>
+					<CNX InstrLine="NodeAllNot"></CNX>
+				</Connexions>
+				<Measurement Name="NumPins">
+					<Limits LowerLimit="0" UpperLimit="0"/>
+					<Property Name="Nominal" Unit="none">0</Property>
+					<Property Name="ResLimit" Unit="Ohm">10</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Current" Unit="mA">100</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">20</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+				</Measurement>
+			</Test>
+		</GOPE>
+		<GOPE Name="In-Circuit" ID="5" Comment="">
+			<Test Name="R1" ID="8" Comment="" TestMethod="Resistor">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.B</CNX>
+					<CNX InstrLine="Lo">VCC</CNX>
+					<CNX InstrLine="Guard">TR1.C</CNX>
+				</Connexions>
+				<Measurement Name="Resistance">
+					<Limits LowerLimit="1.0462" UpperLimit="1.3538"/>
+					<Property Name="Nominal" Unit="MOhm">1.2</Property>
+					<Property Name="Wires" Unit="none">3-wire-guarded</Property>
+					<Property Name="Mode" Unit="none">V</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Current" Unit="A">0.1</Property>
+					<Property Name="VoltageRange" Unit="V">0.2</Property>
+					<Property Name="CurrentRange" Unit="uA">0.16667</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="Delay" Unit="ms">1</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">7</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">20</Property>
+					<Property Name="SampleInterval" Unit="ms">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="R2" ID="9" Comment="" TestMethod="Resistor">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.B</CNX>
+					<CNX InstrLine="Lo">GND</CNX>
+					<CNX InstrLine="Guard">TR1.E</CNX>
+				</Connexions>
+				<Measurement Name="Resistance">
+					<Limits LowerLimit="294.45" UpperLimit="365.58"/>
+					<Property Name="Nominal" Unit="kOhm">330</Property>
+					<Property Name="Wires" Unit="none">3-wire-guarded</Property>
+					<Property Name="Mode" Unit="none">V</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Current" Unit="A">0.1</Property>
+					<Property Name="VoltageRange" Unit="V">0.2</Property>
+					<Property Name="CurrentRange" Unit="uA">0.60606</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="Delay" Unit="ms">1</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">2</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">20</Property>
+					<Property Name="SampleInterval" Unit="ms">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="R3" ID="10" Comment="" TestMethod="Resistor">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.C</CNX>
+					<CNX InstrLine="Lo">VCC</CNX>
+				</Connexions>
+				<Measurement Name="Resistance">
+					<Limits LowerLimit="35.868" UpperLimit="44.134"/>
+					<Property Name="Nominal" Unit="kOhm">40</Property>
+					<Property Name="Wires" Unit="none">2-wire</Property>
+					<Property Name="Mode" Unit="none">V</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Current" Unit="A">0.1</Property>
+					<Property Name="VoltageRange" Unit="V">0.2</Property>
+					<Property Name="CurrentRange" Unit="uA">5</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="Delay" Unit="ms">1</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">20</Property>
+					<Property Name="SampleInterval" Unit="ms">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="R4" ID="11" Comment="" TestMethod="Resistor">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.E</CNX>
+					<CNX InstrLine="Lo">GND</CNX>
+				</Connexions>
+				<Measurement Name="Resistance">
+					<Limits LowerLimit="8.968" UpperLimit="11.034"/>
+					<Property Name="Nominal" Unit="kOhm">10</Property>
+					<Property Name="Wires" Unit="none">2-wire</Property>
+					<Property Name="Mode" Unit="none">V</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Current" Unit="A">0.1</Property>
+					<Property Name="VoltageRange" Unit="V">0.2</Property>
+					<Property Name="CurrentRange" Unit="uA">20</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="Delay" Unit="ms">0</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">100</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+					<Property Name="SampleInterval" Unit="us">200</Property>
+				</Measurement>
+			</Test>
+			<Test Name="C1" ID="12" Comment="" TestMethod="Impedance">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.B</CNX>
+					<CNX InstrLine="Lo">INPUT</CNX>
+				</Connexions>
+				<Measurement Name="Impedance">
+					<Limits LowerLimit="323.62" UpperLimit="396.38"/>
+					<Property Name="Nominal" Unit="nF">360</Property>
+					<Property Name="MeasType" Unit="none">CAP-SER</Property>
+					<Property Name="Wires" Unit="none">2-wire</Property>
+					<Property Name="Frequency" Unit="Hz">1000</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Offset" Unit="none">none</Property>
+					<Property Name="VoltageRange" Unit="V">0.5</Property>
+					<Property Name="CurrentRange" Unit="uA">639.86</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="MinCurrentRange" Unit="uA">2</Property>
+					<Property Name="Delay" Unit="ms">0</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="C2" ID="13" Comment="" TestMethod="Impedance">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.C</CNX>
+					<CNX InstrLine="Lo">OUTPUT</CNX>
+				</Connexions>
+				<Measurement Name="Impedance">
+					<Limits LowerLimit="89.88" UpperLimit="110.12"/>
+					<Property Name="Nominal" Unit="nF">100</Property>
+					<Property Name="MeasType" Unit="none">CAP-SER</Property>
+					<Property Name="Wires" Unit="none">2-wire</Property>
+					<Property Name="Frequency" Unit="Hz">1000</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Offset" Unit="none">none</Property>
+					<Property Name="VoltageRange" Unit="V">0.5</Property>
+					<Property Name="CurrentRange" Unit="uA">177.83</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="MinCurrentRange" Unit="uA">2</Property>
+					<Property Name="Delay" Unit="ms">0</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="C3" ID="14" Comment="" TestMethod="Impedance">
+				<Connexions>
+					<CNX InstrLine="Hi">TR1.E</CNX>
+					<CNX InstrLine="Lo">GND</CNX>
+				</Connexions>
+				<Measurement Name="Impedance">
+					<Limits LowerLimit="89.896" UpperLimit="110.1"/>
+					<Property Name="Nominal" Unit="uF">100</Property>
+					<Property Name="MeasType" Unit="none">CAP-SER</Property>
+					<Property Name="Wires" Unit="none">2-wire</Property>
+					<Property Name="Frequency" Unit="Hz">100</Property>
+					<Property Name="Voltage" Unit="V">0.2</Property>
+					<Property Name="Offset" Unit="none">none</Property>
+					<Property Name="VoltageRange" Unit="V">0.5</Property>
+					<Property Name="CurrentRange" Unit="mA">17.059</Property>
+					<Property Name="AutoRange" Unit="none">true</Property>
+					<Property Name="MinCurrentRange" Unit="uA">2</Property>
+					<Property Name="Delay" Unit="ms">0</Property>
+					<Property Name="MaxWaitInterval" Unit="ms">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">0.1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+				</Measurement>
+			</Test>
+			<Test Name="TR1" ID="15" Comment="" TestMethod="Transistor">
+				<Connexions>
+					<CNX InstrLine="Base">TR1.B</CNX>
+					<CNX InstrLine="Collector">TR1.C</CNX>
+					<CNX InstrLine="Emitter">TR1.E</CNX>
+				</Connexions>
+				<Measurement Name="VoltageBE">
+					<Limits LowerLimit="0.42" UpperLimit="0.78"/>
+					<Property Name="Nominal" Unit="V">0.6</Property>
+					<Property Name="Voltage" Unit="V">1.78</Property>
+					<Property Name="Current" Unit="mA">5</Property>
+					<Property Name="VoltageRange" Unit="V">0.6</Property>
+					<Property Name="Delay" Unit="s">0</Property>
+					<Property Name="MaxWaitInterval" Unit="s">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+					<Property Name="SampleInterval" Unit="us">200</Property>
+				</Measurement>
+				<Measurement Name="VoltageBC">
+					<Limits LowerLimit="0.42" UpperLimit="0.78"/>
+					<Property Name="Nominal" Unit="V">0.6</Property>
+					<Property Name="Voltage" Unit="V">1.78</Property>
+					<Property Name="Current" Unit="mA">5</Property>
+					<Property Name="VoltageRange" Unit="V">0.6</Property>
+					<Property Name="Delay" Unit="s">0</Property>
+					<Property Name="MaxWaitInterval" Unit="s">0</Property>
+					<Property Name="MaxWaitAccuracy" Unit="none">1</Property>
+					<Property Name="Average" Unit="none">1</Property>
+					<Property Name="SampleInterval" Unit="us">200</Property>
+				</Measurement>
+			</Test>
+		</GOPE>
+	</GOPE></Board>

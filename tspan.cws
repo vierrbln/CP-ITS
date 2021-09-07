@@ -1,0 +1,346 @@
+[Workspace Header]
+Version = 1700
+Pathname = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2017"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2017"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "tspan.prj"
+Drag Bar Left = 317
+Window Top = 183
+Window Left = 26
+Window Bottom = 685
+Window Right = 800
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 4
+Window Confinement Region Enabled = True
+MainColumnWidth = 300
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1700
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Bin/ict.fp"
+File Type = "Function Panel"
+Disk Date = 3245665872
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/program files (x86)/national instruments/cvi2017/toolslib/toolbox/inifile.fp"
+File Type = "Function Panel"
+Disk Date = 3573586800
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Bin/resmgr.fp"
+File Type = "Function Panel"
+Disk Date = 3415870880
+In Projects = "1,"
+
+[File 0004]
+Path Line0001 = "/C/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsapi"
+Path Line0002 = "cvi.fp"
+File Type = "Function Panel"
+Disk Date = 3624359644
+In Projects = "1,"
+
+[File 0005]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.fp"
+File Type = "Function Panel"
+Disk Date = 3689920692
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Window Height = 363
+Window Width = 400
+
+[File 0006]
+Path Line0001 = "/C/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsuti"
+Path Line0002 = "l.fp"
+File Type = "Function Panel"
+Disk Date = 3624374984
+In Projects = "1,"
+
+[File 0007]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.c"
+File Type = "CSource"
+Disk Date = 3713254852
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Z-Order = 3
+Source Window State = "1,4829,4830,4829,4,4,4,0,0,76,0,0,0,0,0,29,5284,0,5304,4,401,679,1,0,"
+
+[File 0008]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/definitions.h"
+File Type = "Include"
+Disk Date = 3713330960
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Window Z-Order = 1
+Source Window State = "1,439,439,439,47,48,48,0,0,271,0,0,0,0,0,52,416,0,439,48,251,624,1,0,"
+
+[File 0009]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.h"
+File Type = "Include"
+Disk Date = 3690971496
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,76,0,0,0,0,0,29,0,0,0,0,401,679,1,0,"
+
+[File 0010]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/utilities.c"
+File Type = "CSource"
+Disk Date = 3713327956
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Window Z-Order = 2
+Source Window State = "1,1079,1079,1079,0,71,71,0,0,69,0,0,0,0,0,17,1046,0,1079,88,251,624,1,0,"
+
+[File 0011]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/callbacks.c"
+File Type = "CSource"
+Disk Date = 3689921488
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Source Window State = "1,2226,2226,2226,50,57,57,0,0,0,0,1460,0,2029,7,0,2641,0,2649,0,251,624,1,0,"
+
+[File 0012]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/compare.c"
+File Type = "CSource"
+Disk Date = 3686737510
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,314,314,314,79,89,89,0,0,0,0,0,0,0,0,0,1430,0,1445,0,427,984,1,0,"
+
+[File 0013]
+Path = "/o/2_Common_Panels/splash_callbacks.c"
+File Type = "CSource"
+Disk Date = 3713251370
+In Projects = "1,"
+Window Top = 30
+Source Window State = "1,49,49,49,16,29,29,0,0,0,0,0,0,0,0,0,37,0,49,30,400,600,1,0,"
+
+[File 0014]
+Path = "/o/2_Common_Panels/Splash.uir"
+File Type = "User Interface Resource"
+Disk Date = 3696222094
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Height = 427
+Window Width = 804
+
+[File 0015]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/testcontrolpanel_single.uir"
+File Type = "User Interface Resource"
+Disk Date = 3686628206
+In Projects = "1,"
+
+[File 0016]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/testdebugpanel.uir"
+File Type = "User Interface Resource"
+Disk Date = 3348823612
+In Projects = "1,"
+
+[File 0017]
+Path = "/c/Program Files (x86)/Sw-ITS/Include/eazyscan.h"
+File Type = "Include"
+Disk Date = 3690974860
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Source Window State = "1,20,83,20,0,0,0,0,3,0,0,0,0,0,0,0,34,0,83,0,251,624,1,0,"
+
+[File 0018]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Include/hrestim.h"
+File Type = "Include"
+Disk Date = 3260762272
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0019]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Include/ICT.h"
+File Type = "Include"
+Disk Date = 3403861518
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Source Window State = "1,264,264,264,26,50,50,0,0,0,0,0,0,0,0,0,271,0,274,0,251,624,1,0,"
+
+[File 0020]
+Path = "/o/2_Common_Panels/Splash.h"
+File Type = "Include"
+Disk Date = 3629361692
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,35,35,35,17,31,31,0,3,0,0,0,0,0,0,0,0,0,35,17,349,987,1,0,"
+
+[File 0021]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/testcontrolpanel_single.h"
+File Type = "Include"
+Disk Date = 3686217272
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0022]
+Path = "/o/S102_ControlPanel/Version 2.4.0.5/testdebugpanel.h"
+File Type = "Include"
+Disk Date = 3685601840
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0023]
+Path = "/c/Program Files (x86)/Sw-ITS/Bin/eazyscan.lib"
+File Type = "Library"
+Disk Date = 3690974944
+In Projects = "1,"
+
+[File 0024]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Bin/ICT.lib"
+File Type = "Library"
+Disk Date = 3612860320
+In Projects = "1,"
+
+[File 0025]
+Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Bin/hrestim.lib"
+File Type = "Library"
+Disk Date = 3260762324
+In Projects = "1,"
+
+[File 0026]
+Path = "/C/Program Files (x86)/Windows Kits/8.1/Lib/winv6.3/um/x86/Ole32.Lib"
+File Type = "Library"
+Disk Date = 3459942050
+In Projects = "1,"
+
+[Tab Order]
+Tab 0001 = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.h"
+Tab 0002 = "/o/S102_ControlPanel/Version 2.4.0.5/tspan.c"
+Tab 0003 = "/o/S102_ControlPanel/Version 2.4.0.5/utilities.c"
+Tab 0004 = "/o/S102_ControlPanel/Version 2.4.0.5/definitions.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/Program Files (x86)/National Instruments/TestStand 2017/Bin/SeqEdit.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Watch 1]
+Watch Expression = "iActualInsertionIndex"
+

@@ -1,0 +1,9 @@
+<map id="testdebugpanel.h" name="testdebugpanel.h">
+<area shape="rect" id="node1" title=" " alt="" coords="197,5,318,32"/>
+<area shape="rect" id="node2" href="$d6/dc2/definitions_8h.html" title="All other declarations." alt="" coords="212,80,303,107"/>
+<area shape="rect" id="node3" href="$d3/d3a/callbacks_8c.html" title="All gui callback functions of control panel." alt="" coords="5,162,93,189"/>
+<area shape="rect" id="node4" href="$de/da9/compare_8c.html" title="Numeric comparision functions of control panel." alt="" coords="117,162,200,189"/>
+<area shape="rect" id="node5" href="$d7/d53/tspan_8c.html" title="All exported functions to control teststand control panel." alt="" coords="225,162,290,189"/>
+<area shape="rect" id="node6" href="$d7/db6/utilities_8c.html" title="All helper functions of control panel." alt="" coords="315,162,389,189"/>
+<area shape="rect" id="node7" href="$d8/d68/splash__callbacks_8c.html" title="Splash callback functions of control panel (common for all components)" alt="" coords="414,155,567,196"/>
+</map>
