@@ -119,7 +119,8 @@ language: ANSI-C ISO/IEC9899:1990
 #define TSPAN_ERR_WRITEFIXTURECODECFG           (TSPAN_ERR_BASE - 29)   /* -1003029 */ 
 #define TSPAN_ERR_INIFILEERROR                  (TSPAN_ERR_BASE - 30)   /* -1003030 */ 
 #define TSPAN_ERR_MSAOPTIONENABLEDNOTVALID      (TSPAN_ERR_BASE - 31)   /* -1003031 */ 
-
+#define TSPAN_ERR_WRONGORDERNUMSETTING          (TSPAN_ERR_BASE - 32)   /* -1003032 */
+#define TSPAN_ERR_ORDERNUMLENGTHENTRIENOTFOUND  (TSPAN_ERR_BASE - 33)   /* -1003033 */  
 
 /* Error code to message reference table */
 static GTSL_ERROR_TABLE errorTable =
@@ -279,7 +280,16 @@ static GTSL_ERROR_TABLE errorTable =
 		"The entry MSAOptionsEnabled is wrong. Please check format and value in application.ini"
 	}
 	,
-
+		{
+		TSPAN_ERR_WRONGORDERNUMSETTING,
+		"Wrong order number setting parameter. Please check application.ini"
+	}
+	,
+	{
+		TSPAN_ERR_ORDERNUMLENGTHENTRIENOTFOUND,
+		"order number length entry not found. Please check application.ini"
+	}
+	,
 	 
 	/* include common GTSL error codes and messages */
 	GTSL_ERROR_CODES_AND_MESSAGES,
@@ -321,6 +331,10 @@ typedef struct
    //Serial number settings
    int SerialIsMandatory;
    int SerialLength; 
+   
+   //Odern number settings
+   int OrderNumberIsMandatory;
+   int OrderNumberLength; 
    
    int RunButtonDisabled;
    int DisableExecutionTime;
@@ -468,6 +482,7 @@ int giActualIndex;
 int giHistogramInterval;
 char cLastNameOfStep[1024];
 char gcSerialNumber[1024];
+char gcOrderNumber[1024];
 char gcSelectedVariant[1024];
 int lLastCompType;
 
@@ -478,7 +493,11 @@ int gMeasCurve;
 
 int giSerialIsMandatory;
 int giSerialLength;
+int giOrderNumberIsMandatory;
+int giOrderNumberLength;
 int giRunButtonDisabled;
+int iVariantIsSet;
+int iOrderNumberIsSet;
 int giErrorLogWindowEnabled;
 
 int giLowerLimit;

@@ -239,16 +239,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html#l00040">40</a> of file <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html">splash_callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <span class="keywordflow">switch</span> ( event )</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">case</span> EVENT_LEFT_CLICK:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;         HidePanel( <a class="code" href="../../d6/dc2/definitions_8h.html#a4572ac567a6b7f03d5b6b26064865fdf">gSplash</a> );</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html#l00039">39</a> of file <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html">splash_callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordflow">switch</span> ( event )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">case</span> EVENT_LEFT_CLICK:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;         HidePanel( <a class="code" href="../../d6/dc2/definitions_8h.html#a4572ac567a6b7f03d5b6b26064865fdf">gSplash</a> );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,21 +296,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html#l00053">53</a> of file <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html">splash_callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keywordflow">switch</span> ( event )</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">case</span> EVENT_LEFT_CLICK:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;         HidePanel( <a class="code" href="../../d6/dc2/definitions_8h.html#a4572ac567a6b7f03d5b6b26064865fdf">gSplash</a> );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html#l00050">50</a> of file <a class="el" href="../../d8/d68/splash__callbacks_8c_source.html">splash_callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">switch</span> (event)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">case</span> EVENT_GOT_FOCUS:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">case</span> EVENT_LOST_FOCUS:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> EVENT_CLOSE:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="adefinitions_8h_html_a4572ac567a6b7f03d5b6b26064865fdf"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a4572ac567a6b7f03d5b6b26064865fdf">gSplash</a></div><div class="ttdeci">int gSplash</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00274">definitions.h:274</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_a4572ac567a6b7f03d5b6b26064865fdf"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a4572ac567a6b7f03d5b6b26064865fdf">gSplash</a></div><div class="ttdeci">int gSplash</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00476">definitions.h:476</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

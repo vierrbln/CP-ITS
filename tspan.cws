@@ -13,9 +13,9 @@ Number of Projects = 1
 Active Project = 1
 Project 0001 = "tspan.prj"
 Drag Bar Left = 381
-Window Top = 183
+Window Top = 32
 Window Left = 26
-Window Bottom = 685
+Window Bottom = 534
 Window Right = 816
 Maximized = True
 Maximized Children = True
@@ -30,7 +30,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 2
+Number of Opened Files = 1
 Window Confinement Region Enabled = True
 MainColumnWidth = 364
 FileDateColumnWidth = 70
@@ -88,94 +88,109 @@ Disk Date = 3624374984
 In Projects = "1,"
 
 [File 0007]
-Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/callbacks.c"
-File Type = "CSource"
-Disk Date = 3689921488
-In Projects = "1,"
-Window Top = 62
-Window Left = 18
-Source Window State = "1,2226,2226,2226,50,57,57,0,0,0,0,1460,0,2029,7,0,2641,0,2649,0,251,624,1,0,"
-
-[File 0008]
-Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/compare.c"
-File Type = "CSource"
-Disk Date = 3686737510
-In Projects = "1,"
-Window Top = 92
-Window Left = 42
-Source Window State = "1,314,314,314,79,89,89,0,0,0,0,0,0,0,0,0,1430,0,1445,0,427,984,1,0,"
-
-[File 0009]
-Path = "/x/OneDrive/softwerk4R/Repos/CommonResources/splash_callbacks.c"
-File Type = "CSource"
-Disk Date = 3713251370
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0010]
 Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/tspan.c"
 File Type = "CSource"
-Disk Date = 3713254852
+Disk Date = 3715074354
 In Projects = "1,"
 Window Top = 64
 Window Left = 26
-Window Z-Order = 2
-Source Window State = "1,4829,4830,4829,4,4,4,0,0,91,0,0,0,0,0,25,5284,0,5304,4,401,679,1,0,"
+Source Window State = "1,0,34,0,78,0,78,0,0,91,0,1922,0,1926,10,25,0,0,38,0,401,679,1,0,"
 
-[File 0011]
+[File 0008]
+Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/definitions.h"
+File Type = "Include"
+Disk Date = 3714640404
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Source Window State = "1,499,499,499,4,21,21,0,3,0,0,456,0,0,0,0,474,0,499,4,251,624,1,40,"
+
+[File 0009]
 Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/utilities.c"
 File Type = "CSource"
-Disk Date = 3713882254
+Disk Date = 3715074347
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Source Window State = "1,0,38,0,0,0,0,0,3,84,0,0,0,0,0,15,0,0,38,0,251,624,1,0,"
+
+[File 0010]
+Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/callbacks.c"
+File Type = "CSource"
+Disk Date = 3715074671
 In Projects = "1,"
 Window Top = 62
 Window Left = 18
 Window Z-Order = 1
-Source Window State = "1,1082,1082,1082,8,41,8,0,0,233,0,0,0,0,0,45,1063,0,1078,26,251,624,1,0,"
+Source Window State Line0001 = "1,2827,2827,2827,25,84,25,0,0,233,0,1464,0,2033,7,45,2811,0,2827,108,251,624,1,0"
+Source Window State Line0002 = ","
 
-[File 0012]
-Path = "/x/OneDrive/softwerk4R/Repos/CommonResources/Splash.uir"
-File Type = "User Interface Resource"
-Disk Date = 3696222094
-In Projects = "1,"
-
-[File 0013]
+[File 0011]
 Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/testcontrolpanel_single.uir"
 File Type = "User Interface Resource"
-Disk Date = 3686628206
+Disk Date = 3714643376
 In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Height = 349
+Window Width = 715
 
-[File 0014]
-Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/testdebugpanel.uir"
-File Type = "User Interface Resource"
-Disk Date = 3348823612
-In Projects = "1,"
-
-[File 0015]
-Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/definitions.h"
-File Type = "Include"
-Disk Date = 3713330960
-In Projects = "1,"
-Window Top = 62
-Window Left = 18
-Source Window State = "1,439,439,439,47,48,48,0,0,0,0,0,0,0,0,0,416,0,439,48,251,624,1,0,"
-
-[File 0016]
+[File 0012]
 Path = "/c/Program Files (x86)/Sw-ITS/Include/eazyscan.h"
 File Type = "Include"
 Disk Date = 3690971260
 In Projects = "1,"
 Window Top = 62
 Window Left = 18
-Source Window State = "1,20,83,20,0,0,0,0,3,0,0,0,0,0,0,0,34,0,83,0,251,624,1,0,"
+Source Window State = "1,20,83,20,0,0,0,0,0,233,0,0,0,0,0,46,43,0,66,0,251,624,1,0,"
+
+[File 0013]
+Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/testcontrolpanel_single.h"
+File Type = "Include"
+Disk Date = 3714642444
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,58,58,58,9,35,35,0,3,0,0,0,0,0,0,0,24,0,58,9,349,715,1,0,"
+
+[File 0014]
+Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/compare.c"
+File Type = "CSource"
+Disk Date = 3715074369
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,0,34,0,0,0,0,0,0,135,0,0,0,0,0,26,0,0,38,0,427,984,1,0,"
+
+[File 0015]
+Path = "/x/OneDrive/softwerk4R/Repos/CommonResources/splash_callbacks.c"
+File Type = "CSource"
+Disk Date = 3715074362
+In Projects = "1,"
+Window Top = 34
+Window Left = 10
+Source Window State = "1,0,34,0,0,0,0,0,0,98,0,0,0,0,0,25,0,0,38,0,401,728,1,0,"
+
+[File 0016]
+Path = "/x/OneDrive/softwerk4R/Repos/CommonResources/Splash.uir"
+File Type = "User Interface Resource"
+Disk Date = 3696222094
+In Projects = "1,"
 
 [File 0017]
+Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/testdebugpanel.uir"
+File Type = "User Interface Resource"
+Disk Date = 3348823612
+In Projects = "1,"
+
+[File 0018]
 Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Include/hrestim.h"
 File Type = "Include"
 Disk Date = 3640680074
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0018]
+[File 0019]
 Path = "/c/Program Files (x86)/Rohde-Schwarz/GTSL/Include/ict.h"
 File Type = "Include"
 Disk Date = 3647379076
@@ -184,17 +199,10 @@ Window Top = 62
 Window Left = 18
 Source Window State = "1,264,264,264,26,50,50,0,0,0,0,0,0,0,0,0,271,0,274,0,251,624,1,0,"
 
-[File 0019]
+[File 0020]
 Path = "/x/OneDrive/softwerk4R/Repos/CommonResources/Splash.h"
 File Type = "Include"
 Disk Date = 3629361692
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0020]
-Path = "/x/OneDrive/softwerk4R/Repos/CP-ITS/testcontrolpanel_single.h"
-File Type = "Include"
-Disk Date = 3686217272
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
@@ -212,7 +220,7 @@ Disk Date = 3690971496
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
-Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,679,1,0,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,33,0,33,0,0,0,0,0,0,401,679,1,13,"
 
 [File 0023]
 Path = "/c/Program Files (x86)/Sw-ITS/Bin/eazyscan.lib"
@@ -239,8 +247,7 @@ Disk Date = 3459942050
 In Projects = "1,"
 
 [Tab Order]
-Tab 0001 = "/x/OneDrive/softwerk4R/Repos/CP-ITS/tspan.c"
-Tab 0002 = "/x/OneDrive/softwerk4R/Repos/CP-ITS/utilities.c"
+Tab 0001 = "/x/OneDrive/softwerk4R/Repos/CP-ITS/callbacks.c"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

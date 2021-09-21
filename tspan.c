@@ -1,35 +1,39 @@
-/****************************************************************************/
+/****************************************************************************//****************************************************************************/
 /**
 
-Copyright 2007-2020 Robert Renner
+Copyright 2007-2021 Robert Renner
 
-This file is part of SW-ITS for Rohde &  Schwarz CompactTSVP.
+This file is part of SW-ITS.
 
-SW-ITS for Rohde &  Schwarz CompactTSVP is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version. SW-ITS for Rohde &  Schwarz CompactTSVP is distributed in the hope
-that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+SW-ITS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-@file tspan.c
- *
-@brief All exported functions to control teststand control panel
- *
-@version 2.4.0.0
- *
-@author Robert Renner <A HREF="mailto:trelliscoded@hotmail.com">trelliscoded@hotmail.com</A>\n
- *
-language: ANSI-C ISO/IEC9899:1990
- *
-<b>History:</b>
-- <b>23.11.2007 R. Renner</b>
-- Initial revision
+SW-ITS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
- ******************************************************************************
+You should have received a copy of the GNU General Public License
+along with SW-ITS.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von SW-ITS.
+
+SW-ITS ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren
+veröffentlichten Version, weiter verteilen und/oder modifizieren.
+
+SW-ITS wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
+
+ *****************************************************************************
  *****************************************************************************/
 
 /* INCLUDE FILES **************************************************************/
@@ -452,6 +456,85 @@ void __stdcall tspan_Setup(CAObjHandle sequenceContext, char *pBenchName, long
 		if (lTrace)
 		{
 			sprintf(cTraceBuffer, "SerialLength = %i", pBench->SerialLength);
+			RESMGR_Trace(cTraceBuffer);
+		}
+	}
+	
+	/*---------------------------------------------------------------------/
+	/   Check for order number is mandatory flag
+	/---------------------------------------------------------------------*/
+	if (!*pErrorOccurred)
+	{
+		if (lTrace)
+		{
+			RESMGR_Trace("Check for order number is mandatory flag");
+		}
+		sprintf(cSectionName, "bench->%s", pBenchName);
+		RESMGR_Get_Key_Value(0, 1, cSectionName, "OrderNumberIsMandatory", cTempBuffer,
+							 1024, &lBytesWritten, pErrorOccurred, pErrorCode, errorMessage);
+		if (!lBytesWritten)
+		{
+			pBench->OrderNumberIsMandatory = 0;
+		}
+		else
+		{
+			lBytesWritten = sscanf (cTempBuffer, "%i", &pBench->OrderNumberIsMandatory);
+			if (lBytesWritten != 1)
+			{
+				*pErrorOccurred = TRUE;
+				*pErrorCode = TSPAN_ERR_WRONGORDERNUMSETTING;
+				formatError(errorMessage,  *pErrorCode,  *pResourceId, NULL);
+			}
+			if ((pBench->OrderNumberIsMandatory < 0) || (pBench->OrderNumberIsMandatory > 4))
+			{
+				*pErrorOccurred = TRUE;
+				*pErrorCode = TSPAN_ERR_WRONGORDERNUMSETTING;
+				formatError(errorMessage,  *pErrorCode,  *pResourceId, NULL);
+			}
+		}
+		if (lTrace)
+		{
+			sprintf(cTraceBuffer, "OrderNumberIsMandatory = %i", pBench->OrderNumberIsMandatory);
+			RESMGR_Trace(cTraceBuffer);
+		}
+	}
+
+	/*---------------------------------------------------------------------/
+	/   Check for order number length flag
+	/      If serial is mandatory == 2 or 4 serial length must be checked
+	/---------------------------------------------------------------------*/
+	if (!*pErrorOccurred && ((pBench->OrderNumberIsMandatory == 2) || (pBench->OrderNumberIsMandatory == 4)))
+	{
+		if (lTrace)
+		{
+			RESMGR_Trace("Check for order number length flag");
+		}
+		sprintf(cSectionName, "bench->%s", pBenchName);
+		RESMGR_Get_Key_Value(0, 1, cSectionName, "OrderNumberLength", cTempBuffer,
+							 1024, &lBytesWritten, pErrorOccurred, pErrorCode, errorMessage);
+		if (!lBytesWritten)
+		{
+			*pErrorOccurred = TRUE;
+			*pErrorCode = TSPAN_ERR_ORDERNUMLENGTHENTRIENOTFOUND;
+			formatError(errorMessage,  *pErrorCode,  *pResourceId, NULL);
+		}
+		else
+		{
+			lBytesWritten = sscanf (cTempBuffer, "%i", &pBench->OrderNumberLength);
+			if (lBytesWritten <= 0)
+			{
+				*pErrorOccurred = TRUE;
+				*pErrorCode = TSPAN_ERR_ORDERNUMLENGTHENTRIENOTFOUND;
+				formatError(errorMessage,  *pErrorCode,  *pResourceId, NULL);
+			}
+			else
+			{
+				pBench->OrderNumberLength = abs(pBench->OrderNumberLength);
+			}
+		}
+		if (lTrace)
+		{
+			sprintf(cTraceBuffer, "OrderNumberLength = %i", pBench->OrderNumberLength);
 			RESMGR_Trace(cTraceBuffer);
 		}
 	}
@@ -1543,7 +1626,7 @@ void __stdcall tspan_Setup(CAObjHandle sequenceContext, char *pBenchName, long
 		TS_PropertySetValBoolean(sequenceContext, &pTSErrorInfo, "StationGlobals.TSVP.QuitProgram", TS_PropOption_InsertIfMissing, VFALSE);
 		TS_PropertySetValString(sequenceContext, &pTSErrorInfo, "StationGlobals.TSVP.SerialNumber", TS_PropOption_InsertIfMissing, "");
 	}
-
+	
 	giActualIndex = 0;
 	gdLowerLimit = 0.0;
 	gdUpperLimit = 0.0;
@@ -1841,6 +1924,7 @@ void __stdcall tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long
 	char cTraceBuffer[1024];
 	char cTextBuffer[1024];
 	char *cUser;
+	char *cOrderNumber;
 	char *cStationID;
 	long lTrace;
 
@@ -2720,6 +2804,44 @@ void __stdcall tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long
 		sprintf(cTraceBuffer, "UIR Serial number settings -> %i", giSerialIsMandatory);
 		RESMGR_Trace(cTraceBuffer);
 	}
+	
+	giOrderNumberIsMandatory = pBench->OrderNumberIsMandatory;
+	giOrderNumberLength = pBench->OrderNumberLength;
+	sprintf(gcOrderNumber, "");
+	if (giOrderNumberIsMandatory) 
+	{
+		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_ORDERNUMBER, ATTR_VISIBLE, TRUE);
+		SetMenuBarAttribute (menuBar_ID, MENUBAR_PROGRAM_ORDERNUMBER, ATTR_DIMMED, FALSE);
+		iOrderNumberIsSet = 0;      
+	} else {
+		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_ORDERNUMBER, ATTR_VISIBLE, FALSE);
+		SetMenuBarAttribute (menuBar_ID, MENUBAR_PROGRAM_ORDERNUMBER, ATTR_DIMMED, TRUE); 
+		iOrderNumberIsSet = 1;      
+	}
+	if ((giOrderNumberIsMandatory == 1) || (giOrderNumberIsMandatory == 2))
+	{
+		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMERFORORDERNUM, ATTR_ENABLED, TRUE); 	
+	}
+	if (giOrderNumberIsMandatory >= 3) 
+	{
+		TS_PropertyGetValString (sequenceContext, &errorInfo, "StationGlobals.TSVP.OrderNumber", TS_PropOption_InsertIfMissing, &cOrderNumber);
+		sprintf(cTextBuffer, "Order Number: %s", cOrderNumber);
+		sprintf(gcOrderNumber, "%s", cOrderNumber);
+		SetCtrlVal(giActualPanelHandle, OP_SINGLE_ORDERNUMBER, cTextBuffer);
+		if ((giOrderNumberIsMandatory == 4) && (strlen(cOrderNumber) != giOrderNumberLength))
+		{
+			SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMERFORORDERNUM, ATTR_ENABLED, TRUE);
+		} else {
+			iOrderNumberIsSet = 1;
+		}
+		CA_FreeMemory (cOrderNumber); 
+	}
+	if (lTrace)
+	{
+		sprintf(cTraceBuffer, "UIR Ordner number settings -> %i", giOrderNumberIsMandatory);
+		RESMGR_Trace(cTraceBuffer);
+	}
+
 
 	giRunButtonDisabled = pBench->RunButtonDisabled;
 	if (lTrace)
@@ -2727,6 +2849,10 @@ void __stdcall tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long
 		sprintf(cTraceBuffer, "Run button disabled settings -> %i", giRunButtonDisabled);
 		RESMGR_Trace(cTraceBuffer);
 	}
+	if (!giRunButtonDisabled)
+	{
+		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMER_RUN_BUTTON, ATTR_ENABLED, TRUE);
+	} 
 
 
 	//Get current user
@@ -2811,11 +2937,13 @@ void __stdcall tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long
 		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_VARIANT_RING, ATTR_VISIBLE, TRUE);
 		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMERFORVARIANT, ATTR_ENABLED, TRUE);
 		//SetCtrlVal (giActualPanelHandle, OP_SINGLE_VARIANT_RING, "Please select a variant!");
+		iVariantIsSet = 0;
 	}
 	else
 	{
 		sprintf(pBench->cSelectedVariant, "");
-		if (!giRunButtonDisabled) SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
+		iVariantIsSet = 1;
+		//if (!giRunButtonDisabled) SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
 	}
 
 
@@ -2862,6 +2990,7 @@ void __stdcall tspan_DisplayOperatorPanel(CAObjHandle sequenceContext, long
 		SetCtrlAttribute (giActualTabHandle, TABPANEL_SPLITTER, ATTR_VISIBLE, 1);
 		SetTabPageAttribute (giActualPanelHandle, OP_SINGLE_TAB, 0, ATTR_LABEL_TEXT, "__Actual Test Results & Failed Tests Log");
 	}
+	
 	SetCtrlAttribute (giActualTabHandle, TABPANEL_TESTCASEPATHWAY, ATTR_TEXT_BGCOLOR, 0xFAFAFA);
 	SetCtrlAttribute (giActualTabHandle, TABPANEL_TESTERRORLOG, ATTR_TEXT_BGCOLOR, 0xFAFAFA);
 	vOrderGUIElementsAfterResize(giActualPanelHandle);
@@ -3132,6 +3261,7 @@ Actual yield:\nQ-Rate: %.2f %%\nTested Boards: %i\nPassed: %i\nFailed: %i\nConse
 		//Some panel settings
 		if (lTrace) RESMGR_Trace("Reset UIR");
 		if(giSerialIsMandatory) SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_SERIAL, ATTR_DIMMED, FALSE);
+		if(!giOrderNumberIsMandatory) SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_ORDERNUMBER, ATTR_VISIBLE, FALSE);
 		if(giSerialIsMandatory && !giMSAType1IsEnabled) SetCtrlVal (giActualPanelHandle, OP_SINGLE_SERIAL, "");
 		//Insert execution time in operator user interface
 		dExecTime = gdStopTimeStamp - gdStartTimeStamp;
@@ -5868,24 +5998,26 @@ void __stdcall tspan_RunTest (CAObjHandle sequenceContext, long pResourceId, lon
 	if (! *pErrorOccurred)
 	{
 		sprintf(cSerial, "");
-		*iSerialIsCorrect = 1;
-		*iVariantIsCorrect = 1;
-		if ((pBench->iVariantsEnabled > 0) && (!strlen(gcSelectedVariant)))
+		*iSerialIsCorrect = 0;
+		*iVariantIsCorrect = 0;
+		if (!iOrderNumberIsSet)
 		{
-			*iVariantIsCorrect = 0;
 			goto ERRORTAG;
 		}
+		if ((pBench->iVariantsEnabled > 0) && (!strlen(gcSelectedVariant)))
+		{
+			goto ERRORTAG;
+		}
+		*iVariantIsCorrect = 1; 
 		if (giSerialIsMandatory)
 		{
 			GetCtrlVal(giActualPanelHandle, OP_SINGLE_SERIAL, cSerial);
 			if (!strlen(cSerial) && (giSerialIsMandatory == 1))
 			{
-				*iSerialIsCorrect = 0;
 				goto ERRORTAG;
 			}
 			if ((strlen(cSerial) != giSerialLength) && (giSerialIsMandatory > 1))
 			{
-				*iSerialIsCorrect = 0;
 				goto ERRORTAG;
 			}
 			hResult = TS_PropertySetValString(sequenceContext, &errorInfo, "StationGlobals.TSVP.SerialNumber",
@@ -5902,7 +6034,7 @@ void __stdcall tspan_RunTest (CAObjHandle sequenceContext, long pResourceId, lon
 		}
 		SetActiveTabPage (giActualPanelHandle, OP_SINGLE_TAB, 0);
 		SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
-		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_LABEL_TEXT, "TERMITATE TEST [CTRL+T]");
+		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_LABEL_TEXT, "TERMINATE TEST [CTRL+T]");
 		SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_RUN_TEST, ATTR_SHORTCUT_KEY, VAL_MENUKEY_MODIFIER|'T');
 
 		SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_SERIAL, ATTR_DIMMED, TRUE);

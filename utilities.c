@@ -1,33 +1,37 @@
 /****************************************************************************/
 /**
 
-Copyright 2007-2020 Robert Renner
+Copyright 2007-2021 Robert Renner
 
-This file is part of SW-ITS for Rohde &  Schwarz CompactTSVP.
+This file is part of SW-ITS.
 
-SW-ITS for Rohde &  Schwarz CompactTSVP is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version. SW-ITS for Rohde &  Schwarz CompactTSVP is distributed in the hope
-that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+SW-ITS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-@file utilities.c
- *
-@brief All helper functions of control panel
- *
-@version 2.4.0.0
- *
-@author Robert Renner <A HREF="mailto:trelliscoded@hotmail.com">trelliscoded@hotmail.com</A>\n
- *
-language: ANSI-C ISO/IEC9899:1990
- *
-<b>History:</b>
-- <b>23.11.2007 R. Renner</b>
-- Initial revision
+SW-ITS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SW-ITS.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von SW-ITS.
+
+SW-ITS ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren
+veröffentlichten Version, weiter verteilen und/oder modifizieren.
+
+SW-ITS wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
 
  *****************************************************************************
  *****************************************************************************/
@@ -200,6 +204,7 @@ int StartThreadForOperatorPanel(void *data)
 	SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_VARIANT_RING, ATTR_CALLBACK_DATA, data);
 	SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_MSA_INDICATOR, ATTR_CALLBACK_DATA, data);
 	SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_GENERALTIMER, ATTR_CALLBACK_DATA, data);
+	SetCtrlAttribute(giActualPanelHandle, OP_SINGLE_ORDERNUMBER, ATTR_CALLBACK_DATA, data);
 	
 	GetPanelHandleFromTabPage(giActualPanelHandle, OP_SINGLE_TAB, 1, &iTabHandle);
 	SetCtrlAttribute(iTabHandle, TABPANEL_2_TABLE, ATTR_CALLBACK_DATA, data);
@@ -216,6 +221,7 @@ int StartThreadForOperatorPanel(void *data)
 	SetMenuBarAttribute(giMenuBarHandle, MENUBAR_SET_TICKET_ENABLE, ATTR_CALLBACK_DATA, data);
 	SetMenuBarAttribute(giMenuBarHandle, MENUBAR_SET_UI_ACTUAL, ATTR_CALLBACK_DATA, data);
 	SetMenuBarAttribute(giMenuBarHandle, MENUBAR_SET_UI_REPORT, ATTR_CALLBACK_DATA, data);
+	SetMenuBarAttribute(giMenuBarHandle, MENUBAR_PROGRAM_ORDERNUMBER, ATTR_CALLBACK_DATA, data);
 
 	SetMenuBarAttribute(giMenuBarHandle, MENUBAR_PROGRAM_MODE_MSATYPE1, ATTR_CALLBACK_DATA, data);
 
@@ -725,6 +731,7 @@ void vOrderGUIElementsAfterResize (int panel)
 	int iTextPointSize;
 	int iTabPanelHandle;
 	int idx, iTop;
+	int iCaseHeight;
 
 	char cTextBuffer[1024];
 
@@ -753,6 +760,7 @@ void vOrderGUIElementsAfterResize (int panel)
 	SetCtrlAttribute (panel, OP_SINGLE_SEQFILEPATH, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
 	SetCtrlAttribute (panel, OP_SINGLE_TITEL2, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
 	SetCtrlAttribute (panel, OP_SINGLE_TEXTMSG_2, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
+	SetCtrlAttribute (panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
 	
 	SetCtrlAttribute (panel, OP_SINGLE_SEQFILEPATH, ATTR_TOP, 58);
 	SetCtrlAttribute (panel, OP_SINGLE_SEQFILEPATH, ATTR_LEFT, 15);
@@ -765,7 +773,7 @@ void vOrderGUIElementsAfterResize (int panel)
 	//SetCtrlAttribute (panel, OP_SINGLE_TESTSTATUS_MSG, ATTR_TEXT_BGCOLOR, VAL_RED);
 
 	//Variante
-	SetCtrlAttribute (panel, OP_SINGLE_VARIANT_RING, ATTR_TOP, iPanelHeight - 160);
+	SetCtrlAttribute (panel, OP_SINGLE_VARIANT_RING, ATTR_TOP, iPanelHeight - 165);
 	SetCtrlAttribute (panel, OP_SINGLE_VARIANT_RING, ATTR_LEFT, 5);
 	SetCtrlAttribute (panel, OP_SINGLE_VARIANT_RING, ATTR_WIDTH, (iPanelWidth - 50) / 3);
 
@@ -773,7 +781,11 @@ void vOrderGUIElementsAfterResize (int panel)
 	SetCtrlAttribute (panel, OP_SINGLE_SERIAL, ATTR_TOP, iPanelHeight - 124);
 	SetCtrlAttribute (panel, OP_SINGLE_SERIAL, ATTR_LEFT, iPanelWidth - (2*(iPanelWidth / 3)) + 8);
 	SetCtrlAttribute (panel, OP_SINGLE_SERIAL, ATTR_WIDTH, (iPanelWidth - 50) / 3);
-
+	
+	SetCtrlAttribute (panel, OP_SINGLE_ORDERNUMBER, ATTR_TOP, iPanelHeight - 165);
+	SetCtrlAttribute (panel, OP_SINGLE_ORDERNUMBER, ATTR_LEFT, iPanelWidth - (2*(iPanelWidth / 3)) + 8);
+	SetCtrlAttribute (panel, OP_SINGLE_ORDERNUMBER, ATTR_WIDTH, (iPanelWidth - 50) / 3);
+	
 	//Run button
 	SetCtrlAttribute (panel, OP_SINGLE_RUN_TEST, ATTR_TOP, iPanelHeight - 125);
 	SetCtrlAttribute (panel, OP_SINGLE_RUN_TEST, ATTR_LEFT, iPanelWidth - (iPanelWidth / 3) + 8);
@@ -814,16 +826,9 @@ void vOrderGUIElementsAfterResize (int panel)
 		SetCtrlAttribute (iTabPanelHandle, TABPANEL_SPLITTER, ATTR_HEIGHT, iPanelHeight - 295);  
 	}
 
-	GetCtrlAttribute (iTabPanelHandle, TABPANEL_TESTCASEPATHWAY, ATTR_VISIBLE_LINES, &giVisibleLines);
-	if (iTextPointSize < 13)
-	{
-		SetCtrlAttribute (panel, OP_SINGLE_TAB, ATTR_HEIGHT, (giVisibleLines * (iTextPointSize + 2)) + 30);
-	}
-	else
-	{
-		SetCtrlAttribute (panel, OP_SINGLE_TAB, ATTR_HEIGHT, (giVisibleLines * (iTextPointSize + 3)) + 30);
-	}
-
+	GetCtrlAttribute (iTabPanelHandle, TABPANEL_TESTCASEPATHWAY, ATTR_HEIGHT, &iCaseHeight);
+	SetCtrlAttribute (panel, OP_SINGLE_TAB, ATTR_HEIGHT, iCaseHeight + 23);      
+	
 	return;
 }
 
@@ -1074,15 +1079,13 @@ char *cOwnDateStr (void)
 /**
 KillTabInStepName
 *
-@brief Find tabs in given string and replace it with space char. Special function
-to format the name of steps. Was ness tabs was used in name of steps in teststand to
-format special step names.
+@brief Find tabs in given string and replace it with space char
 *
 @param cInputString: String (NameOfStep) that can contains tabs (Input)
 @param cOutputString: After correct execution that string is equal to input without tabs
 @param iLength: Length of given string (Input)
 *
-@return Found tabs
+@return Date string in format 23.10.2010
 *****************************************************************************/
 int iKillTabInStepName (char *cInputString, char *cOutputString, int iLength)
 {

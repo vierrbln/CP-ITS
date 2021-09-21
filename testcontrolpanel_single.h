@@ -55,6 +55,9 @@
 #define  OP_SINGLE_TIMER_MSA_RUNBUTTON    29      /* control type: timer, callback function: TimerForRunButtonIfMSAEnabled */
 #define  OP_SINGLE_SEQFILEPATH            30      /* control type: textMsg, callback function: (none) */
 #define  OP_SINGLE_GENERALTIMER           31      /* control type: timer, callback function: GeneralTimerCallback */
+#define  OP_SINGLE_ORDERNUMBER            32      /* control type: textMsg, callback function: OrderNumberCallback */
+#define  OP_SINGLE_TIMER_RUN_BUTTON       33      /* control type: timer, callback function: TimerForRunButton */
+#define  OP_SINGLE_TIMERFORORDERNUM       34      /* control type: timer, callback function: TimerForOrderNumber */
 
 #define  SAVING_POP                       4
 #define  SAVING_POP_MSG                   2       /* control type: textMsg, callback function: (none) */
@@ -87,25 +90,26 @@
 #define  MENUBAR_PROGRAM_MODE_STOPONFAIL  7       /* callback function: RunModeStopFail */
 #define  MENUBAR_PROGRAM_MODE_SEPARATOR_4 8
 #define  MENUBAR_PROGRAM_MODE_MSATYPE1    9       /* callback function: RunModeMSAType1 */
-#define  MENUBAR_PROGRAM_SEPARATOR_2      10
-#define  MENUBAR_PROGRAM_ABOUT            11      /* callback function: About */
-#define  MENUBAR_PROGRAM_SEPARATOR_3      12
-#define  MENUBAR_PROGRAM_QUIT             13      /* callback function: Quit */
-#define  MENUBAR_SET                      14
-#define  MENUBAR_SET_TICKET               15
-#define  MENUBAR_SET_TICKET_SUBMENU       16
-#define  MENUBAR_SET_TICKET_ENABLE        17      /* callback function: EnableTicketPrinter */
-#define  MENUBAR_SET_REPORT               18
-#define  MENUBAR_SET_REPORT_SUBMENU       19
-#define  MENUBAR_SET_REPORT_ENABLE        20      /* callback function: EnableReport */
-#define  MENUBAR_SET_REPORT_APPEND        21      /* callback function: AppendReport */
-#define  MENUBAR_SET_REPORT_ONLYFAIL      22      /* callback function: OnlyFailedTests */
-#define  MENUBAR_SET_UI                   23
-#define  MENUBAR_SET_UI_SUBMENU           24
-#define  MENUBAR_SET_UI_ACTUAL            25      /* callback function: UIActualTestStep */
-#define  MENUBAR_SET_UI_REPORT            26      /* callback function: UIOnlyFailedTests */
-#define  MENUBAR_SET_SEPARATOR            27
-#define  MENUBAR_SET_RESETSTAT            28      /* callback function: ResetStatistics */
+#define  MENUBAR_PROGRAM_ORDERNUMBER      10      /* callback function: ChangeOrderNumberMenu */
+#define  MENUBAR_PROGRAM_SEPARATOR_2      11
+#define  MENUBAR_PROGRAM_ABOUT            12      /* callback function: About */
+#define  MENUBAR_PROGRAM_SEPARATOR_3      13
+#define  MENUBAR_PROGRAM_QUIT             14      /* callback function: Quit */
+#define  MENUBAR_SET                      15
+#define  MENUBAR_SET_TICKET               16
+#define  MENUBAR_SET_TICKET_SUBMENU       17
+#define  MENUBAR_SET_TICKET_ENABLE        18      /* callback function: EnableTicketPrinter */
+#define  MENUBAR_SET_REPORT               19
+#define  MENUBAR_SET_REPORT_SUBMENU       20
+#define  MENUBAR_SET_REPORT_ENABLE        21      /* callback function: EnableReport */
+#define  MENUBAR_SET_REPORT_APPEND        22      /* callback function: AppendReport */
+#define  MENUBAR_SET_REPORT_ONLYFAIL      23      /* callback function: OnlyFailedTests */
+#define  MENUBAR_SET_UI                   24
+#define  MENUBAR_SET_UI_SUBMENU           25
+#define  MENUBAR_SET_UI_ACTUAL            26      /* callback function: UIActualTestStep */
+#define  MENUBAR_SET_UI_REPORT            27      /* callback function: UIOnlyFailedTests */
+#define  MENUBAR_SET_SEPARATOR            28
+#define  MENUBAR_SET_RESETSTAT            29      /* callback function: ResetStatistics */
 
 
      /* Callback Prototypes: */
@@ -113,6 +117,7 @@
 void CVICALLBACK About(int menubar, int menuItem, void *callbackData, int panel);
 void CVICALLBACK AppendReport(int menubar, int menuItem, void *callbackData, int panel);
 int  CVICALLBACK ChangeHistogramBars(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+void CVICALLBACK ChangeOrderNumberMenu(int menubar, int menuItem, void *callbackData, int panel);
 int  CVICALLBACK ChangeVariantRing(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK CloseGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 void CVICALLBACK EnableReport(int menubar, int menuItem, void *callbackData, int panel);
@@ -122,6 +127,7 @@ int  CVICALLBACK MeasCurvePanelCallback(int panel, int event, void *callbackData
 int  CVICALLBACK MSAIndicatorCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 void CVICALLBACK OnlyFailedTests(int menubar, int menuItem, void *callbackData, int panel);
 int  CVICALLBACK OpSingleCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OrderNumberCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK PrintGraphWindow(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 void CVICALLBACK Quit(int menubar, int menuItem, void *callbackData, int panel);
 void CVICALLBACK ResetStatistics(int menubar, int menuItem, void *callbackData, int panel);
@@ -131,6 +137,8 @@ void CVICALLBACK RunModeSingleStep(int menubar, int menuItem, void *callbackData
 void CVICALLBACK RunModeStopFail(int menubar, int menuItem, void *callbackData, int panel);
 int  CVICALLBACK RunTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK TabCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK TimerForOrderNumber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK TimerForRunButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK TimerForRunButtonIfMSAEnabled(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK TimerForStrokeIndicator(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK TimerForVariant(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);

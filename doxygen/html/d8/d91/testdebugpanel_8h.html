@@ -929,20 +929,20 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00895">895</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>{</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  <span class="keywordtype">int</span> iChecked;</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>  GetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, &amp;iChecked);</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>  <span class="keywordflow">if</span> (!iChecked)</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>  {</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>    SetPanelAttribute(panel, ATTR_FLOATING, VAL_FLOAT_ALWAYS);</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  }</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>  <span class="keywordflow">else</span></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00899">899</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>{</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>  <span class="keywordtype">int</span> iChecked;</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  GetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, &amp;iChecked);</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>  <span class="keywordflow">if</span> (!iChecked)</div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>  {</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    SetPanelAttribute(panel, ATTR_FLOATING, VAL_FLOAT_NEVER);</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    SetPanelAttribute(panel, ATTR_FLOATING, VAL_FLOAT_ALWAYS);</div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>  }</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, !iChecked);</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>}</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>  {</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    SetPanelAttribute(panel, ATTR_FLOATING, VAL_FLOAT_NEVER);</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>  }</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, !iChecked);</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -997,37 +997,37 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00977">977</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>{</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a080933696f9d8e1b8fa37c51830ff0a8">MENUBAR_SETTINGS_HISTO_I10</a>, ATTR_CHECKED, FALSE);</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#adf979dd0aed7d47579f6e1ebfa184190">MENUBAR_SETTINGS_HISTO_I20</a>, ATTR_CHECKED, FALSE);</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a3a6208514658e1315a4767c913d3848a">MENUBAR_SETTINGS_HISTO_I30</a>, ATTR_CHECKED, FALSE);</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#acee02f3cca58df89eb7d694e377b5280">MENUBAR_SETTINGS_HISTO_I40</a>, ATTR_CHECKED, FALSE);</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a87778b4358b3e3f36674a1dd881029d6">MENUBAR_SETTINGS_HISTO_I50</a>, ATTR_CHECKED, FALSE);</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, TRUE);</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>  <span class="keywordflow">switch</span> (menuItem)</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  {</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a080933696f9d8e1b8fa37c51830ff0a8">MENUBAR_SETTINGS_HISTO_I10</a>:</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 10;</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#adf979dd0aed7d47579f6e1ebfa184190">MENUBAR_SETTINGS_HISTO_I20</a>:</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 20;</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a3a6208514658e1315a4767c913d3848a">MENUBAR_SETTINGS_HISTO_I30</a>:</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 30;</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#acee02f3cca58df89eb7d694e377b5280">MENUBAR_SETTINGS_HISTO_I40</a>:</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 40;</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a87778b4358b3e3f36674a1dd881029d6">MENUBAR_SETTINGS_HISTO_I50</a>:</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 50;</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 30;</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>  }</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>}</div>
-<div class="ttc" id="adefinitions_8h_html_a8800e19f002a97446af551f9c0aefea5"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a></div><div class="ttdeci">int giHistogramInterval</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00468">definitions.h:468</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00981">981</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>{</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a080933696f9d8e1b8fa37c51830ff0a8">MENUBAR_SETTINGS_HISTO_I10</a>, ATTR_CHECKED, FALSE);</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#adf979dd0aed7d47579f6e1ebfa184190">MENUBAR_SETTINGS_HISTO_I20</a>, ATTR_CHECKED, FALSE);</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a3a6208514658e1315a4767c913d3848a">MENUBAR_SETTINGS_HISTO_I30</a>, ATTR_CHECKED, FALSE);</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#acee02f3cca58df89eb7d694e377b5280">MENUBAR_SETTINGS_HISTO_I40</a>, ATTR_CHECKED, FALSE);</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>  SetMenuBarAttribute(menuBar, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a87778b4358b3e3f36674a1dd881029d6">MENUBAR_SETTINGS_HISTO_I50</a>, ATTR_CHECKED, FALSE);</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, TRUE);</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  <span class="keywordflow">switch</span> (menuItem)</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>  {</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a080933696f9d8e1b8fa37c51830ff0a8">MENUBAR_SETTINGS_HISTO_I10</a>:</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 10;</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#adf979dd0aed7d47579f6e1ebfa184190">MENUBAR_SETTINGS_HISTO_I20</a>:</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 20;</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a3a6208514658e1315a4767c913d3848a">MENUBAR_SETTINGS_HISTO_I30</a>:</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 30;</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#acee02f3cca58df89eb7d694e377b5280">MENUBAR_SETTINGS_HISTO_I40</a>:</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 40;</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    <span class="keywordflow">case</span> <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a87778b4358b3e3f36674a1dd881029d6">MENUBAR_SETTINGS_HISTO_I50</a>:</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 50;</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a> = 30;</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>  }</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>}</div>
+<div class="ttc" id="adefinitions_8h_html_a8800e19f002a97446af551f9c0aefea5"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a></div><div class="ttdeci">int giHistogramInterval</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00482">definitions.h:482</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a080933696f9d8e1b8fa37c51830ff0a8"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a080933696f9d8e1b8fa37c51830ff0a8">MENUBAR_SETTINGS_HISTO_I10</a></div><div class="ttdeci">#define MENUBAR_SETTINGS_HISTO_I10</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00050">testdebugpanel.h:50</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a3a6208514658e1315a4767c913d3848a"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a3a6208514658e1315a4767c913d3848a">MENUBAR_SETTINGS_HISTO_I30</a></div><div class="ttdeci">#define MENUBAR_SETTINGS_HISTO_I30</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00052">testdebugpanel.h:52</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a87778b4358b3e3f36674a1dd881029d6"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a87778b4358b3e3f36674a1dd881029d6">MENUBAR_SETTINGS_HISTO_I50</a></div><div class="ttdeci">#define MENUBAR_SETTINGS_HISTO_I50</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00054">testdebugpanel.h:54</a></div></div>
@@ -1101,35 +1101,35 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Errorcode 0 -&gt; no error, &gt; 0 warnings, &lt; 0 errors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00229">229</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>{</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">int</span> iTabHandle;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordflow">switch</span> (event)</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  {</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">case</span> EVENT_COMMIT:</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      <span class="comment">//Analog</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 0, &amp;iTabHandle);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aafa50e013d5c447097e259be82709ed6">ANALOG_ANALOG</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <span class="comment">//Histogramm</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 1, &amp;iTabHandle);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      <span class="comment">//Graph</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 2, &amp;iTabHandle);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af8c294d35ffa63cbde091cb86a4ce88d">giMinValue</a> = 0;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ad202935ae7fdb5a4c03499aa67e289f0">giMaxValue</a> = 0;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ab85666ac8b5fd0adb4ba03094a761678">giLowerLimit</a> = 0;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a> = 0;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      <a class="code hl_function" href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a>();</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
-<div class="ttc" id="adefinitions_8h_html_a936a4ea2c1041911010fa2cee953888b"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a></div><div class="ttdeci">void ResetMeasurements(void)</div><div class="ttdoc">Operatorpanel || Starts the new thread for GUI.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/utilities_8c_source.html#l00330">utilities.c:330</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_ab85666ac8b5fd0adb4ba03094a761678"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ab85666ac8b5fd0adb4ba03094a761678">giLowerLimit</a></div><div class="ttdeci">int giLowerLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00484">definitions.h:484</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_ad202935ae7fdb5a4c03499aa67e289f0"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ad202935ae7fdb5a4c03499aa67e289f0">giMaxValue</a></div><div class="ttdeci">int giMaxValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00486">definitions.h:486</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_af17d022e45b7a1713d8fed0a7928d3f9"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a></div><div class="ttdeci">int giUpperLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00485">definitions.h:485</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_af8c294d35ffa63cbde091cb86a4ce88d"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#af8c294d35ffa63cbde091cb86a4ce88d">giMinValue</a></div><div class="ttdeci">int giMinValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00487">definitions.h:487</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00233">233</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">int</span> iTabHandle;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordflow">switch</span> (event)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">case</span> EVENT_COMMIT:</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      <span class="comment">//Analog</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 0, &amp;iTabHandle);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aafa50e013d5c447097e259be82709ed6">ANALOG_ANALOG</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="comment">//Histogramm</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 1, &amp;iTabHandle);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="comment">//Graph</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 2, &amp;iTabHandle);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af8c294d35ffa63cbde091cb86a4ce88d">giMinValue</a> = 0;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ad202935ae7fdb5a4c03499aa67e289f0">giMaxValue</a> = 0;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ab85666ac8b5fd0adb4ba03094a761678">giLowerLimit</a> = 0;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a> = 0;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>      <a class="code hl_function" href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a>();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
+<div class="ttc" id="adefinitions_8h_html_a936a4ea2c1041911010fa2cee953888b"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a></div><div class="ttdeci">void ResetMeasurements(void)</div><div class="ttdoc">Operatorpanel || Starts the new thread for GUI.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/utilities_8c_source.html#l00336">utilities.c:336</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_ab85666ac8b5fd0adb4ba03094a761678"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ab85666ac8b5fd0adb4ba03094a761678">giLowerLimit</a></div><div class="ttdeci">int giLowerLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00503">definitions.h:503</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_ad202935ae7fdb5a4c03499aa67e289f0"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ad202935ae7fdb5a4c03499aa67e289f0">giMaxValue</a></div><div class="ttdeci">int giMaxValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00505">definitions.h:505</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_af17d022e45b7a1713d8fed0a7928d3f9"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a></div><div class="ttdeci">int giUpperLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00504">definitions.h:504</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_af8c294d35ffa63cbde091cb86a4ce88d"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#af8c294d35ffa63cbde091cb86a4ce88d">giMinValue</a></div><div class="ttdeci">int giMinValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00506">definitions.h:506</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a6a8339d2d25e72e54dfc694f0b43b06b"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a></div><div class="ttdeci">#define GRAPH_GRAPH</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00040">testdebugpanel.h:40</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a862c5d45c6e98206966aed2f0f68fbe3"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a></div><div class="ttdeci">#define DEBUG_TAB</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00023">testdebugpanel.h:23</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_a8b18531e9ddd83e4ff808f210a448073"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a></div><div class="ttdeci">#define HISTOGRAM_HISTOGRAMM</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00042">testdebugpanel.h:42</a></div></div>
@@ -1188,20 +1188,20 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l01022">1022</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>{</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>  <span class="keywordtype">int</span> iTabHandle;</div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>  <span class="comment">//Analog</span></div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 0, &amp;iTabHandle);</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aafa50e013d5c447097e259be82709ed6">ANALOG_ANALOG</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>  <span class="comment">//Histogramm</span></div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 1, &amp;iTabHandle);</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>  <span class="comment">//Graph</span></div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 2, &amp;iTabHandle);</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>  <a class="code hl_function" href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a>();</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l01026">1026</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>{</div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>  <span class="keywordtype">int</span> iTabHandle;</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>  <span class="comment">//Analog</span></div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 0, &amp;iTabHandle);</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aafa50e013d5c447097e259be82709ed6">ANALOG_ANALOG</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>  <span class="comment">//Histogramm</span></div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 1, &amp;iTabHandle);</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>  <span class="comment">//Graph</span></div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>  GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, 2, &amp;iTabHandle);</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>  DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>  <a class="code hl_function" href="../../d6/dc2/definitions_8h.html#a936a4ea2c1041911010fa2cee953888b">ResetMeasurements</a>();</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1256,51 +1256,51 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00924">924</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>{</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>  <span class="keywordtype">double</span> dMean = 0.0;</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  <span class="keywordtype">double</span> dDev = 0.0;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>  <span class="keywordtype">double</span> dCPKLL = 0.0;</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  <span class="keywordtype">double</span> dCPKUL = 0.0;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <span class="keywordtype">double</span> dCP = 0.0;</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  <span class="keywordtype">char</span> cTraceBuffer[1024];</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  GetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, &amp;<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>);</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, !<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>);</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a> = !<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>;</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a> &amp;&amp; (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5))</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  {</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    StdDev(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> - 1, &amp;dMean, &amp;dDev);</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a> &gt; 6)</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    {</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>      dCP = (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a> - <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>) / (6* dDev);</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    }</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    dCPKLL = (dMean - <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>) / (3* dDev);</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a> &gt; 6)</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    {</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>      dCPKUL = (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a> - dMean) / (3* dDev);</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00928">928</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>{</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <span class="keywordtype">double</span> dMean = 0.0;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  <span class="keywordtype">double</span> dDev = 0.0;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  <span class="keywordtype">double</span> dCPKLL = 0.0;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  <span class="keywordtype">double</span> dCPKUL = 0.0;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  <span class="keywordtype">double</span> dCP = 0.0;</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>  <span class="keywordtype">char</span> cTraceBuffer[1024];</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  GetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, &amp;<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>);</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>  SetMenuBarAttribute(menuBar, menuItem, ATTR_CHECKED, !<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>);</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>  <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a> = !<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>;</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a> &amp;&amp; (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5))</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>  {</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    StdDev(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> - 1, &amp;dMean, &amp;dDev);</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a> &gt; 6)</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    {</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>      dCP = (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a> - <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>) / (6* dDev);</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    }</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    dCPKLL = (dMean - <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>) / (3* dDev);</div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a> &gt; 6)</div>
 <div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    {</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>      sprintf(cTraceBuffer, <span class="stringliteral">&quot;cp: %.2f - cpk LL: %.2f - cpk UL: %.2f&quot;</span>, dCP, dCPKLL, dCPKUL);</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>      dCPKUL = (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a> - dMean) / (3* dDev);</div>
 <div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    }</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a> &gt; 6)</div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    {</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>      sprintf(cTraceBuffer, <span class="stringliteral">&quot;cp: %.2f - cpk LL: %.2f&quot;</span>, dCP, dCPKLL);</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>      sprintf(cTraceBuffer, <span class="stringliteral">&quot;cp: %.2f - cpk LL: %.2f - cpk UL: %.2f&quot;</span>, dCP, dCPKLL, dCPKUL);</div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    }</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    SetCtrlVal(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aa70500fcf6a3ba3d9b3fd1e5d5905e6d">DEBUG_CPK</a>, cTraceBuffer);</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>  }</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>)</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  {</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    SetCtrlVal(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aa70500fcf6a3ba3d9b3fd1e5d5905e6d">DEBUG_CPK</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#acba56cff22764ff01f1f1ea1e1ad928c">cLastNameOfStep</a>);</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    {</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>      sprintf(cTraceBuffer, <span class="stringliteral">&quot;cp: %.2f - cpk LL: %.2f&quot;</span>, dCP, dCPKLL);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    }</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    SetCtrlVal(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aa70500fcf6a3ba3d9b3fd1e5d5905e6d">DEBUG_CPK</a>, cTraceBuffer);</div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>  }</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>}</div>
-<div class="ttc" id="adefinitions_8h_html_a60d49a51946678e0b182a599a676b8f9"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a></div><div class="ttdeci">double gdLowerLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00465">definitions.h:465</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_a6deac73598c42a890d2e8d708b246129"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a></div><div class="ttdeci">int ShowCPKValues_Enabled</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00490">definitions.h:490</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_ac5778374a7cb4d6a2610e35f91183dd1"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a></div><div class="ttdeci">int lLastCompType</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00472">definitions.h:472</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_acba56cff22764ff01f1f1ea1e1ad928c"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#acba56cff22764ff01f1f1ea1e1ad928c">cLastNameOfStep</a></div><div class="ttdeci">char cLastNameOfStep[1024]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00469">definitions.h:469</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_adf13cc3ff6bcd04f62985fa36d76662b"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a></div><div class="ttdeci">double gdUpperLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00466">definitions.h:466</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_aead7bf26bd6391dc772fe7b640cbe3c2"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a></div><div class="ttdeci">int giActualIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00467">definitions.h:467</a></div></div>
-<div class="ttc" id="adefinitions_8h_html_afe1079f931ae9bea945c77cc9b2ada4c"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a></div><div class="ttdeci">double gdMeasurements[1024]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00464">definitions.h:464</a></div></div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a>)</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>  {</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    SetCtrlVal(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#aa70500fcf6a3ba3d9b3fd1e5d5905e6d">DEBUG_CPK</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#acba56cff22764ff01f1f1ea1e1ad928c">cLastNameOfStep</a>);</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>  }</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>}</div>
+<div class="ttc" id="adefinitions_8h_html_a60d49a51946678e0b182a599a676b8f9"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a></div><div class="ttdeci">double gdLowerLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00479">definitions.h:479</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_a6deac73598c42a890d2e8d708b246129"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#a6deac73598c42a890d2e8d708b246129">ShowCPKValues_Enabled</a></div><div class="ttdeci">int ShowCPKValues_Enabled</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00509">definitions.h:509</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_ac5778374a7cb4d6a2610e35f91183dd1"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#ac5778374a7cb4d6a2610e35f91183dd1">lLastCompType</a></div><div class="ttdeci">int lLastCompType</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00487">definitions.h:487</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_acba56cff22764ff01f1f1ea1e1ad928c"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#acba56cff22764ff01f1f1ea1e1ad928c">cLastNameOfStep</a></div><div class="ttdeci">char cLastNameOfStep[1024]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00483">definitions.h:483</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_adf13cc3ff6bcd04f62985fa36d76662b"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a></div><div class="ttdeci">double gdUpperLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00480">definitions.h:480</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_aead7bf26bd6391dc772fe7b640cbe3c2"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a></div><div class="ttdeci">int giActualIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00481">definitions.h:481</a></div></div>
+<div class="ttc" id="adefinitions_8h_html_afe1079f931ae9bea945c77cc9b2ada4c"><div class="ttname"><a href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a></div><div class="ttdeci">double gdMeasurements[1024]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc2/definitions_8h_source.html#l00478">definitions.h:478</a></div></div>
 <div class="ttc" id="atestdebugpanel_8h_html_aa70500fcf6a3ba3d9b3fd1e5d5905e6d"><div class="ttname"><a href="../../d8/d91/testdebugpanel_8h.html#aa70500fcf6a3ba3d9b3fd1e5d5905e6d">DEBUG_CPK</a></div><div class="ttdeci">#define DEBUG_CPK</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d91/testdebugpanel_8h_source.html#l00025">testdebugpanel.h:25</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1370,63 +1370,63 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Errorcode 0 -&gt; no error, &gt; 0 warnings, &lt; 0 errors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00823">823</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>{</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>  <span class="keywordtype">int</span> iTabIndex;</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  <span class="keywordtype">int</span> iTabHandle;</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>  <span class="keywordtype">int</span> iMinIndex, iMaxIndex;</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>  <span class="keywordtype">double</span> dMax, dMin;</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>  <span class="keywordtype">int</span> iNumberOfModes;</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <span class="keywordtype">double</span> dModes[2048];</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <span class="keywordtype">int</span> iHistogramArray[1024];</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordtype">double</span> dAxisArray[1024];</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  <span class="keywordtype">int</span> iScaleMode;</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>  <span class="keywordflow">switch</span> (event)</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  {</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keywordflow">case</span> EVENT_ACTIVE_TAB_CHANGE:</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>      GetActiveTabPage(panel, control, &amp;iTabIndex);</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, iTabIndex, &amp;iTabHandle);</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>      <span class="keywordflow">switch</span> (iTabIndex)</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>      {</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>      <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>      <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        <span class="comment">//Histogramm</span></div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5)</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>        {</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>          <span class="comment">//giHistrogramInterval</span></div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>          MaxMin1D(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, &amp;dMax, &amp;iMaxIndex, &amp;dMin, &amp; iMinIndex);</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>          <span class="comment">//ModeEx (gdMeasurements, giActualIndex, giHistogramInterval, dModes, &amp;iNumberOfModes);</span></div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>          Histogram(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, dMin, dMax, iHistogramArray, dAxisArray, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a>);</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>          PlotXY(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dAxisArray, iHistogramArray, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a>, VAL_DOUBLE, VAL_INTEGER, VAL_VERTICAL_BAR, VAL_EMPTY_SQUARE, VAL_SOLID, 1, VAL_RED);</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>          GetAxisScalingMode(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, VAL_LEFT_YAXIS, &amp;iScaleMode, &amp;dMin, &amp;dMax);</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>          PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMax, VAL_GREEN);</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a>)</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>          {</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>            PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMax, VAL_GREEN);</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>          }</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>        }</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>      <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        <span class="comment">//Graph</span></div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5)</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        {</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>          PlotWaveform(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, VAL_DOUBLE, 1.0, 0.0, 0.0, 1.0, VAL_THIN_LINE, VAL_SIMPLE_DOT, VAL_SOLID, 1, VAL_RED);</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>          GetAxisScalingMode(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, VAL_BOTTOM_XAXIS, &amp;iScaleMode, &amp;dMin, &amp;dMax);</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>          PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMax, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, VAL_GREEN);</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a>)</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>          {</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>            PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMax, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, VAL_GREEN);</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>          }</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        }</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>      }</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>  }</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d3a/callbacks_8c_source.html#l00827">827</a> of file <a class="el" href="../../d3/d3a/callbacks_8c_source.html">callbacks.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>{</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>  <span class="keywordtype">int</span> iTabIndex;</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <span class="keywordtype">int</span> iTabHandle;</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <span class="keywordtype">int</span> iMinIndex, iMaxIndex;</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordtype">double</span> dMax, dMin;</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  <span class="keywordtype">int</span> iNumberOfModes;</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>  <span class="keywordtype">double</span> dModes[2048];</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  <span class="keywordtype">int</span> iHistogramArray[1024];</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  <span class="keywordtype">double</span> dAxisArray[1024];</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>  <span class="keywordtype">int</span> iScaleMode;</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>  <span class="keywordflow">switch</span> (event)</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>  {</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keywordflow">case</span> EVENT_ACTIVE_TAB_CHANGE:</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>      GetActiveTabPage(panel, control, &amp;iTabIndex);</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>      GetPanelHandleFromTabPage(panel, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a862c5d45c6e98206966aed2f0f68fbe3">DEBUG_TAB</a>, iTabIndex, &amp;iTabHandle);</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>      <span class="keywordflow">switch</span> (iTabIndex)</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>      {</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>        <span class="comment">//Histogramm</span></div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>        DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5)</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>        {</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>          <span class="comment">//giHistrogramInterval</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>          MaxMin1D(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, &amp;dMax, &amp;iMaxIndex, &amp;dMin, &amp; iMinIndex);</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>          <span class="comment">//ModeEx (gdMeasurements, giActualIndex, giHistogramInterval, dModes, &amp;iNumberOfModes);</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>          Histogram(<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, dMin, dMax, iHistogramArray, dAxisArray, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a>);</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>          PlotXY(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dAxisArray, iHistogramArray, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a8800e19f002a97446af551f9c0aefea5">giHistogramInterval</a>, VAL_DOUBLE, VAL_INTEGER, VAL_VERTICAL_BAR, VAL_EMPTY_SQUARE, VAL_SOLID, 1, VAL_RED);</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>          GetAxisScalingMode(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, VAL_LEFT_YAXIS, &amp;iScaleMode, &amp;dMin, &amp;dMax);</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>          PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMax, VAL_GREEN);</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a>)</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>          {</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>            PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMax, VAL_GREEN);</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>          }</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        }</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        <span class="comment">//Graph</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>        DeleteGraphPlot(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>,  - 1, VAL_IMMEDIATE_DRAW);</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a> &gt; 5)</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>        {</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>          PlotWaveform(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a6a8339d2d25e72e54dfc694f0b43b06b">GRAPH_GRAPH</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#afe1079f931ae9bea945c77cc9b2ada4c">gdMeasurements</a>, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#aead7bf26bd6391dc772fe7b640cbe3c2">giActualIndex</a>, VAL_DOUBLE, 1.0, 0.0, 0.0, 1.0, VAL_THIN_LINE, VAL_SIMPLE_DOT, VAL_SOLID, 1, VAL_RED);</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>          GetAxisScalingMode(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, VAL_BOTTOM_XAXIS, &amp;iScaleMode, &amp;dMin, &amp;dMax);</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>          PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, dMax, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#a60d49a51946678e0b182a599a676b8f9">gdLowerLimit</a>, VAL_GREEN);</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>          <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#af17d022e45b7a1713d8fed0a7928d3f9">giUpperLimit</a>)</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>          {</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>            PlotLine(iTabHandle, <a class="code hl_define" href="../../d8/d91/testdebugpanel_8h.html#a8b18531e9ddd83e4ff808f210a448073">HISTOGRAM_HISTOGRAMM</a>, dMin, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, dMax, <a class="code hl_variable" href="../../d6/dc2/definitions_8h.html#adf13cc3ff6bcd04f62985fa36d76662b">gdUpperLimit</a>, VAL_GREEN);</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>          }</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        }</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>      }</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>  }</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

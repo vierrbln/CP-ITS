@@ -1,35 +1,39 @@
 /****************************************************************************/
 /**
 
-Copyright 2007-2020 Robert Renner
+Copyright 2007-2021 Robert Renner
 
-This file is part of SW-ITS for Rohde &  Schwarz CompactTSVP.
+This file is part of SW-ITS.
 
-SW-ITS for Rohde &  Schwarz CompactTSVP is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version. SW-ITS for Rohde &  Schwarz CompactTSVP is distributed in the hope
-that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+SW-ITS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-@file compare.c
- *
-@brief Numeric comparision functions of control panel
- *
-@version 2.4.0.0
- *
-@author Robert Renner <A HREF="mailto:trelliscoded@hotmail.com">trelliscoded@hotmail.com</A>\n
- *
-language: ANSI-C ISO/IEC9899:1990
- *
-<b>History:</b>
-- <b>23.11.2007 R. Renner</b>
-- Initial revision
+SW-ITS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
- ******************************************************************************
+You should have received a copy of the GNU General Public License
+along with SW-ITS.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von SW-ITS.
+
+SW-ITS ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren
+veröffentlichten Version, weiter verteilen und/oder modifizieren.
+
+SW-ITS wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
+
+ *****************************************************************************
  *****************************************************************************/
 
 /* INCLUDE FILES **************************************************************/

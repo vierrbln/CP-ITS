@@ -1,35 +1,39 @@
 /****************************************************************************/
 /**
 
-Copyright 2007-2020 Robert Renner
+Copyright 2007-2021 Robert Renner
 
-This file is part of SW-ITS for Rohde &  Schwarz CompactTSVP.
+This file is part of SW-ITS.
 
-SW-ITS for Rohde &  Schwarz CompactTSVP is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version. SW-ITS for Rohde &  Schwarz CompactTSVP is distributed in the hope
-that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+SW-ITS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-@file callbacks.c
- *
-@brief All gui callback functions of control panel
- *
-@version 2.4.0.0
- *
-@author Robert Renner <A HREF="mailto:trelliscoded@hotmail.com">trelliscoded@hotmail.com</A>\n
- *
-language: ANSI-C ISO/IEC9899:1990
- *
-<b>History:</b>
-- <b>23.11.2007 R. Renner</b>
-- Initial revision
+SW-ITS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
- ******************************************************************************
+You should have received a copy of the GNU General Public License
+along with SW-ITS.  If not, see <http://www.gnu.org/licenses/>.
+
+Diese Datei ist Teil von SW-ITS.
+
+SW-ITS ist Freie Software: Sie können es unter den Bedingungen
+der GNU General Public License, wie von der Free Software Foundation,
+Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren
+veröffentlichten Version, weiter verteilen und/oder modifizieren.
+
+SW-ITS wird in der Hoffnung, dass es nützlich sein wird, aber
+OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite
+Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.
+Siehe die GNU General Public License für weitere Details.
+
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem
+Programm erhalten haben. Wenn nicht, siehe <https://www.gnu.org/licenses/>.
+
+ *****************************************************************************
  *****************************************************************************/
 
 /* INCLUDE FILES **************************************************************/
@@ -112,7 +116,7 @@ int RunButtonHit (int panel, int control, int event, void* callbackData, int eve
   threadData = (ThreadData*)callbackData;
   SetActiveTabPage(panel, OP_SINGLE_TAB, 0);
   SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
-  SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_LABEL_TEXT, "TERMITATE TEST [CTRL+T]");
+  SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_LABEL_TEXT, "TERMINATE TEST [CTRL+T]");
   SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_SHORTCUT_KEY, VAL_MENUKEY_MODIFIER | 'T');
   SetCtrlAttribute(panel, OP_SINGLE_SERIAL, ATTR_DIMMED, TRUE);
   SetCtrlAttribute(panel, OP_SINGLE_VARIANT_RING, ATTR_DIMMED, TRUE);
@@ -709,7 +713,7 @@ void CVICALLBACK ChangeVariant(int menuBar, int menuItem, void* callbackData, in
   }
   if (!giRunButtonDisabled)
   {
-    SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
+    iVariantIsSet = 1;
   }
   GetMenuBarAttribute(menuBar, 0, ATTR_FIRST_MENU_ID, &iFirstItem);
   GetMenuBarAttribute(menuBar, iFirstItem, ATTR_MENU_NAME, cName);
@@ -1227,7 +1231,7 @@ int CVICALLBACK ChangeVariantRing(int panel, int control, int event, void* callb
       }
       if (!giRunButtonDisabled)
       {
-        SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
+        iVariantIsSet = 1;
       }
       menuBar = GetPanelMenuBar(panel);
       GetMenuBarAttribute(menuBar, 0, ATTR_FIRST_MENU_ID, &iFirstItem);
@@ -2665,4 +2669,187 @@ int CVICALLBACK GeneralTimerCallback(int panel, int control, int event, void* ca
       break;
   }
   return 0;
+}
+
+
+/* FUNCTION *****************************************************************/
+/**
+OrderNumberCallback
+*
+@brief Operator panel || Double click start process to change order number
+*
+@param panel: Panel id of resource (Input)
+@param control: Control id of resource (Input)
+@param event: event type id of callback (Input)
+@param callbackData: Given callback data (Input)
+@param eventData1: Given event data 1 (Input)
+@param eventData2: Given event data 2 (Input)
+*
+@return Errorcode 0 -> no error, > 0 warnings, < 0 errors
+*****************************************************************************/
+
+int CVICALLBACK OrderNumberCallback (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	int iSelect;
+	ThreadData* threadData;
+	ERRORINFO pTSErrorInfo;
+	char cTempBuffer[1024];
+	threadData = (ThreadData*)callbackData;
+	
+	switch (event)
+	{
+		case EVENT_LEFT_DOUBLE_CLICK:
+			if ((giOrderNumberIsMandatory == 1) || (giOrderNumberIsMandatory == 3)) 
+			{
+				sprintf(cTempBuffer, "");
+				do 
+				{
+					iSelect = GenericMessagePopup ("CP-ITS ControlPanel", "Please enter the order number and click <Confirm>.", "Confirm", "Cancel", "", cTempBuffer, 
+						50, 0, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN2);
+					if (iSelect == 2) return 0;
+				} while (strlen(cTempBuffer) == 0);
+				sprintf(gcOrderNumber, cTempBuffer);
+			} else if ((giOrderNumberIsMandatory == 2) || (giOrderNumberIsMandatory == 4)) 
+			{
+				sprintf(cTempBuffer, "");
+				do 
+				{
+					iSelect = GenericMessagePopup ("CP-ITS ControlPanel", "Please enter the order number and click <Confirm>.", "Confirm", "Cancel", "", cTempBuffer, 
+						giOrderNumberLength, 0, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN2);
+					if (iSelect == 2) return 0;
+				} while (strlen(cTempBuffer) != giOrderNumberLength);
+				sprintf(gcOrderNumber, cTempBuffer);
+			}
+			sprintf(cTempBuffer, "Order Number: %s", gcOrderNumber);
+			SetCtrlVal(panel, OP_SINGLE_ORDERNUMBER, cTempBuffer);
+			TS_PropertySetValString(threadData->ThisContext, &pTSErrorInfo, "StationGlobals.TSVP.OrderNumber", TS_PropOption_InsertIfMissing, gcOrderNumber);  
+			SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMERFORORDERNUM, ATTR_ENABLED, FALSE);
+			SetCtrlAttribute(panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
+			iOrderNumberIsSet = 1;
+			break;
+	}
+	return 0;
+}
+
+/* FUNCTION *****************************************************************/
+/**
+ChangeOrderNumberMenu
+*
+@brief Operator panel || Menu item starts process to change the order number
+*
+@param menuBar: Menu bar id of resource (Input)
+@param menuItem: Menu item id of resource (Input)
+@param callbackData: Given callback data (Input)
+@param panel: Panel id of resource (Input)
+*
+@return Errorcode 0 -> no error, > 0 warnings, < 0 errors
+*****************************************************************************/
+
+void CVICALLBACK ChangeOrderNumberMenu (int menuBar, int menuItem, void *callbackData,
+		int panel)
+{
+	int iSelect;
+	ThreadData* threadData;
+	ERRORINFO pTSErrorInfo;
+	char cTempBuffer[1024];
+	threadData = (ThreadData*)callbackData;
+	
+	if ((giOrderNumberIsMandatory == 1) || (giOrderNumberIsMandatory == 3)) 
+	{
+		sprintf(cTempBuffer, "");
+		do 
+		{
+			iSelect = GenericMessagePopup ("CP-ITS ControlPanel", "Please enter the order number and click <Confirm>.", "Confirm", "Cancel", "", cTempBuffer, 
+				50, 0, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN2);
+			if (iSelect == 2) return;
+		} while (strlen(cTempBuffer) > 0);
+		sprintf(gcOrderNumber, cTempBuffer);
+	} else if ((giOrderNumberIsMandatory == 2) || (giOrderNumberIsMandatory == 4)) 
+	{
+		sprintf(cTempBuffer, "");
+		do 
+		{
+			iSelect = GenericMessagePopup ("CP-ITS ControlPanel", "Please enter the order number and click <Confirm>.", "Confirm", "Cancel", "", cTempBuffer, 
+				giOrderNumberLength, 0, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN1, VAL_GENERIC_POPUP_BTN2);
+			if (iSelect == 2) return;
+		} while (strlen(cTempBuffer) != giOrderNumberLength);
+		sprintf(gcOrderNumber, cTempBuffer);
+	}
+	sprintf(cTempBuffer, "Order Number: %s", gcOrderNumber);
+	SetCtrlVal(panel, OP_SINGLE_ORDERNUMBER, cTempBuffer);
+	TS_PropertySetValString(threadData->ThisContext, &pTSErrorInfo, "StationGlobals.TSVP.OrderNumber", TS_PropOption_InsertIfMissing, gcOrderNumber); 
+	SetCtrlAttribute (giActualPanelHandle, OP_SINGLE_TIMERFORORDERNUM, ATTR_ENABLED, FALSE);
+	SetCtrlAttribute(panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
+	iOrderNumberIsSet = 1;
+}
+
+/* FUNCTION *****************************************************************/
+/**
+TimerForOrderNumber
+*
+@brief Operator panel || If order number enabled and not set thru Operator or test sequence. Resource is blinking.
+*
+@param panel: Panel id of resource (Input)
+@param control: Control id of resource (Input)
+@param event: event type id of callback (Input)
+@param callbackData: Given callback data (Input)
+@param eventData1: Given event data 1 (Input)
+@param eventData2: Given event data 2 (Input)
+*
+@return Errorcode 0 -> no error, > 0 warnings, < 0 errors
+*****************************************************************************/
+
+int CVICALLBACK TimerForOrderNumber (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	int iColor;
+	switch (event)
+	{
+		case EVENT_TIMER_TICK:
+			GetCtrlAttribute(panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, &iColor);
+		      if (iColor != VAL_RED)
+		      {
+		        SetCtrlAttribute(panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, VAL_RED);
+		      }
+		      if (iColor == VAL_RED)
+		      {
+		        SetCtrlAttribute(panel, OP_SINGLE_ORDERNUMBER, ATTR_TEXT_BGCOLOR, VAL_TRANSPARENT);
+		      }
+			break;
+	}
+	return 0;
+}
+
+/* FUNCTION *****************************************************************/
+/**
+TimerForRunButton
+*
+@brief Operator panel || Check variant settings and order number settings. If all set, run button is enabled
+*
+@param panel: Panel id of resource (Input)
+@param control: Control id of resource (Input)
+@param event: event type id of callback (Input)
+@param callbackData: Given callback data (Input)
+@param eventData1: Given event data 1 (Input)
+@param eventData2: Given event data 2 (Input)
+*
+@return Errorcode 0 -> no error, > 0 warnings, < 0 errors
+*****************************************************************************/
+
+int CVICALLBACK TimerForRunButton (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_TIMER_TICK:
+			if (iVariantIsSet && iOrderNumberIsSet)
+			{
+				SetCtrlAttribute(panel, OP_SINGLE_RUN_TEST, ATTR_DIMMED, FALSE);
+				SetCtrlAttribute(panel, control, ATTR_ENABLED, FALSE);
+			}
+			break;
+			
+			}
+	return 0;
 }

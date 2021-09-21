@@ -41973,6 +41973,10 @@ CanonicalType="int (*)(void *, int, int *, void *)"
 
 
 
+
+
+
+
 [struct BENCH_STRUCT]
 Class="struct"
 iOwner="int"
@@ -41996,6 +42000,8 @@ cSelectedVariant="char [1024]"
 cVariants="char [100][1024]"
 SerialIsMandatory="int"
 SerialLength="int"
+OrderNumberIsMandatory="int"
+OrderNumberLength="int"
 RunButtonDisabled="int"
 DisableExecutionTime="int"
 Briefing="int"
@@ -42106,6 +42112,11 @@ cContent="char [1024]"
 [CellValue]
 Class="Typedef"
 CanonicalType="struct cell_value"
+
+
+
+
+
 
 
 

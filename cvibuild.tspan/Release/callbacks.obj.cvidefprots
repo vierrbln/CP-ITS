@@ -146,3 +146,19 @@ Prototype="int TimerForRunButtonIfMSAEnabled(int panel, int control, int event, 
 Class="Function"
 Prototype="int GeneralTimerCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 
+[OrderNumberCallback]
+Class="Function"
+Prototype="int OrderNumberCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ChangeOrderNumberMenu]
+Class="Function"
+Prototype="void ChangeOrderNumberMenu(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[TimerForOrderNumber]
+Class="Function"
+Prototype="int TimerForOrderNumber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerForRunButton]
+Class="Function"
+Prototype="int TimerForRunButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

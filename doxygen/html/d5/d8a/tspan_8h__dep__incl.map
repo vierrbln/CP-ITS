@@ -1,8 +1,7 @@
 <map id="tspan.h" name="tspan.h">
-<area shape="rect" id="node1" title="Declaration of all exported functions." alt="" coords="225,5,290,32"/>
-<area shape="rect" id="node2" href="$d3/d3a/callbacks_8c.html" title="All gui callback functions of control panel." alt="" coords="5,87,93,114"/>
-<area shape="rect" id="node3" href="$de/da9/compare_8c.html" title="Numeric comparision functions of control panel." alt="" coords="117,87,200,114"/>
-<area shape="rect" id="node4" href="$d7/d53/tspan_8c.html" title="All exported functions to control teststand control panel." alt="" coords="225,87,290,114"/>
-<area shape="rect" id="node5" href="$d7/db6/utilities_8c.html" title="All helper functions of control panel." alt="" coords="315,87,389,114"/>
-<area shape="rect" id="node6" href="$d8/d68/splash__callbacks_8c.html" title="Splash callback functions of control panel (common for all components)" alt="" coords="414,80,567,121"/>
+<area shape="rect" id="node1" title="Declaration of all exported functions." alt="" coords="175,5,241,32"/>
+<area shape="rect" id="node2" href="$d3/d3a/callbacks_8c.html" title="All gui callback functions of control panel." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node3" href="$de/da9/compare_8c.html" title="Numeric comparision functions of control panel." alt="" coords="117,80,200,107"/>
+<area shape="rect" id="node4" href="$d7/d53/tspan_8c.html" title="All exported functions to control teststand control panel." alt="" coords="225,80,290,107"/>
+<area shape="rect" id="node5" href="$d7/db6/utilities_8c.html" title="All helper functions of control panel." alt="" coords="315,80,389,107"/>
 </map>

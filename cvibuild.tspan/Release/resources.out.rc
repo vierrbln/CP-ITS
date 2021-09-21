@@ -10,7 +10,7 @@ BEGIN
 END
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,4,0,5
+ FILEVERSION 2,5,0,0
  PRODUCTVERSION 2,5,0,0
  FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
  FILEFLAGS 0L
@@ -23,7 +23,7 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "FileDescription", "CP-ITS ControlPanel\0"
-            VALUE "FileVersion", "2.4.0.5\0"
+            VALUE "FileVersion", "2.5.0.0\0"
             VALUE "InternalName", "S101\0"
             VALUE "LegalCopyright", "Copyright © Robert Renner, 2009-2021\0"
             VALUE "LegalTrademarks", "Free software under terms of  GNU General Public License.\0"
@@ -53,6 +53,8 @@ CVIDLLexports CVIDLLprototypes
    "int ChangeHistogramBars(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
    "void ChangeHistogramInterval(int menuBar, int menuItem, void *callbackData, int panel);"
+   "\n",
+   "void ChangeOrderNumberMenu(int menuBar, int menuItem, void *callbackData, int panel);"
    "\n",
    "void ChangeVariant(int menuBar, int menuItem, void *callbackData, int panel);"
    "\n",
@@ -91,6 +93,8 @@ CVIDLLexports CVIDLLprototypes
    "void OnlyFailedTests(int menuBar, int menuItem, void *callbackData, int panel);"
    "\n",
    "int OpSingleCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OrderNumberCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
    "int PictureCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
@@ -133,6 +137,10 @@ CVIDLLexports CVIDLLprototypes
    "int Tab(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
    "int TabCallBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TimerForOrderNumber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int TimerForRunButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
    "int TimerForRunButtonIfMSAEnabled(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
    "\n",
